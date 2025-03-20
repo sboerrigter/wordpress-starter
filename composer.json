@@ -2,7 +2,7 @@
   "name": "sboerrigter/wordpress-starter",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress starter project for custom theme development with Bedrock, Gutenberg, Advanced Custom Fields, Tailwind CSS, Prettier, BrowserSync and a few PHP classes and and templates to get started.",
+  "description": "WordPress starter project for custom theme development with Bedrock, Gutenberg, Advanced Custom Fields, Tailwind CSS, Prettier, BrowserSync, Deployer and a few PHP classes and and templates to get started.",
   "homepage": "https://github.com/sboerrigter/wordpress-starter",
   "authors": [
     {
