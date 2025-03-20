@@ -12,3 +12,6 @@ Editor::init();
 Media::init();
 
 Plugins\Acf\GeneralContent::init();
+
+PostTypes\Page::init();
+PostTypes\Post::init();
