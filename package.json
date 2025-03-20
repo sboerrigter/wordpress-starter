@@ -14,5 +14,8 @@
     ],
     "singleQuote": true,
     "tabWidth": 2
+  },
+  "dependencies": {
+    "tailwind": "^4.0.0"
   }
 }
