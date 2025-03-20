@@ -1,0 +1,17 @@
+{
+  "name": "wordpress-starter",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@prettier/plugin-php": "*",
+    "prettier": "*"
+  },
+  "scripts": {
+    "format": "npx prettier . --write"
+  },
+  "prettier": {
+    "plugins": [
+      "@prettier/plugin-php"
+    ],
+    "singleQuote": true
+  }
+}

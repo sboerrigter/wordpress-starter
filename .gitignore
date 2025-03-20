@@ -2,15 +2,16 @@
 .env
 .env.*
 *.log
+/node_modules
+/vendor
+/web/wp
+/web/wp-content/cache
+/web/wp-content/languages
+/web/wp-content/mu-plugins
+/web/wp-content/plugins
+/web/wp-content/upgrade
+/web/wp-content/uploads
 auth.json
-vendor
-web/wp
-web/wp-content/cache
-web/wp-content/languages
-web/wp-content/mu-plugins
-web/wp-content/plugins
-web/wp-content/upgrade
-web/wp-content/uploads
 
 !.env.example
 !web/wp-content/languages/.gitkeep

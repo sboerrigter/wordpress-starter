@@ -15,7 +15,10 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org",
-      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
     },
     {
       "type": "composer",
@@ -54,14 +57,26 @@
   "prefer-stable": true,
   "extra": {
     "dropin-paths": {
-			"web/wp-content/languages/": ["vendor:koodimonni-language"],
-			"web/wp-content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-			"web/wp-content/languages/themes/": ["vendor:koodimonni-theme-language"]
-		},
+      "web/wp-content/languages/": [
+        "vendor:koodimonni-language"
+      ],
+      "web/wp-content/languages/plugins/": [
+        "vendor:koodimonni-plugin-language"
+      ],
+      "web/wp-content/languages/themes/": [
+        "vendor:koodimonni-theme-language"
+      ]
+    },
     "installer-paths": {
-      "web/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+      "web/wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
     "wordpress-install-dir": "web/wp"
   }
