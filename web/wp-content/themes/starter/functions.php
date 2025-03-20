@@ -10,6 +10,7 @@ Admin::init();
 Assets::init();
 Editor::init();
 Media::init();
+Security::init();
 
 Plugins\Acf\GeneralContent::init();
 
