@@ -16,29 +16,48 @@
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    },
+    {
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
     }
   ],
   "require": {
-    "php": ">=8.1",
     "composer/installers": "*",
-    "vlucas/phpdotenv": "*",
     "oscarotero/env": "*",
+    "php": ">=8.1",
     "roots/bedrock-autoloader": "*",
     "roots/wordpress": "*",
     "roots/wp-config": "*",
-    "roots/wp-password-bcrypt": "*"
+    "roots/wp-password-bcrypt": "*",
+    "vlucas/phpdotenv": "*",
+    "wpackagist-plugin/limit-login-attempts": "*",
+    "wpackagist-plugin/seo-by-rank-math": "*",
+    "wpackagist-plugin/wp-mail-smtp": "*",
+    "wpengine/advanced-custom-fields-pro": "*",
+    "koodimonni-language/core-nl_nl": "*"
   },
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "allow-plugins": {
       "composer/installers": true,
-      "roots/wordpress-core-installer": true
+      "roots/wordpress-core-installer": true,
+      "koodimonni/composer-dropin-installer": true
     }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "extra": {
+    "dropin-paths": {
+			"web/wp-content/languages/": ["vendor:koodimonni-language"],
+			"web/wp-content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+			"web/wp-content/languages/themes/": ["vendor:koodimonni-theme-language"]
+		},
     "installer-paths": {
       "web/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],

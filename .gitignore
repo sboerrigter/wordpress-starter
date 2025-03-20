@@ -4,13 +4,15 @@
 *.log
 auth.json
 vendor
+web/wp
 web/wp-content/cache
+web/wp-content/languages
 web/wp-content/mu-plugins
 web/wp-content/plugins
 web/wp-content/upgrade
 web/wp-content/uploads
-web/wp
 
 !.env.example
+!web/wp-content/languages/.gitkeep
 !web/wp-content/plugins/.gitkeep
 !web/wp-content/uploads/.gitkeep
