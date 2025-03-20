@@ -2,18 +2,14 @@
 .env
 .env.*
 *.log
-vendor
 auth.json
-web/.htaccess
-web/app/cache/*
-web/app/mu-plugins/*
-web/app/plugins/*
-web/app/themes/twentytwentyfive/
+vendor
+web/app/cache
+web/app/mu-plugins
+web/app/plugins
 web/app/upgrade
-web/app/uploads/*
+web/app/uploads
 web/wp
-wp-cli.local.yml
-
 
 !.env.example
 !web/app/plugins/.gitkeep
