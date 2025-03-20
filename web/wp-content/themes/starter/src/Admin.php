@@ -2,6 +2,8 @@
 
 namespace Starter;
 
+use WP_Admin_Bar;
+
 final class Admin
 {
   public static function init()
@@ -9,12 +11,12 @@ final class Admin
     add_action('admin_head', [static::class, 'admin_head']);
     add_action('admin_menu', [static::class, 'admin_menu']);
     add_filter('custom_menu_order', '__return_true');
-    add_action('menu_order', [static::class, 'menu_order'], 10, 1);
+    add_action('menu_order', [static::class, 'menu_order']);
     add_action('admin_bar_menu', [static::class, 'admin_bar_menu']);
   }
 
   // Hide WordPress update notice
-  public static function admin_head(): void
+  public static function admin_head()
   {
     remove_action('admin_notices', 'update_nag', 3);
   }
@@ -31,7 +33,7 @@ final class Admin
   }
 
   // Reorder admin menu items and put any items not in this list at the end
-  public static function menu_order($order)
+  public static function menu_order(array $order)
   {
     $newOrder = [
       'index.php', // Dashboard
@@ -66,7 +68,7 @@ final class Admin
   }
 
   // Remove admin bar items
-  public static function admin_bar_menu($adminBar)
+  public static function admin_bar_menu(WP_Admin_Bar $adminBar)
   {
     $adminBar->remove_menu('comments');
   }
