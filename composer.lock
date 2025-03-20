@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "032d8a5708cb1eef03d61903c7787e2e",
+  "content-hash": "c3ac9d23e5ad5128a93271e45b19b561",
   "packages": [
     {
       "name": "composer/installers",
@@ -46,7 +46,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Kyle Robinson Young",
@@ -178,7 +180,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Graham Campbell",
@@ -222,7 +226,12 @@
       },
       "type": "wordpress-language",
       "description": "WordPress core translations for Dutch - nl_nl",
-      "keywords": ["Translation", "WordPress", "core", "nl_nl"]
+      "keywords": [
+        "Translation",
+        "WordPress",
+        "core",
+        "nl_nl"
+      ]
     },
     {
       "name": "koodimonni/composer-dropin-installer",
@@ -255,7 +264,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["WTFPL"],
+      "license": [
+        "WTFPL"
+      ],
       "authors": [
         {
           "name": "Onni Hakala",
@@ -294,13 +305,17 @@
       },
       "type": "library",
       "autoload": {
-        "files": ["src/env_function.php"],
+        "files": [
+          "src/env_function.php"
+        ],
         "psr-4": {
           "Env\\": "src/"
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Oscar Otero",
@@ -311,7 +326,9 @@
       ],
       "description": "Simple library to consume environment variables",
       "homepage": "https://github.com/oscarotero/env",
-      "keywords": ["env"],
+      "keywords": [
+        "env"
+      ],
       "support": {
         "email": "oom@oscarotero.com",
         "issues": "https://github.com/oscarotero/env/issues",
@@ -356,7 +373,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["Apache-2.0"],
+      "license": [
+        "Apache-2.0"
+      ],
       "authors": [
         {
           "name": "Johannes M. Schmitt",
@@ -370,7 +389,12 @@
         }
       ],
       "description": "Option Type for PHP",
-      "keywords": ["language", "option", "php", "type"],
+      "keywords": [
+        "language",
+        "option",
+        "php",
+        "type"
+      ],
       "support": {
         "issues": "https://github.com/schmittjoh/php-option/issues",
         "source": "https://github.com/schmittjoh/php-option/tree/1.9.3"
@@ -415,7 +439,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Nick Fox",
@@ -479,10 +505,17 @@
       },
       "type": "metapackage",
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT", "GPL-2.0-or-later"],
+      "license": [
+        "MIT",
+        "GPL-2.0-or-later"
+      ],
       "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
       "homepage": "https://wordpress.org/",
-      "keywords": ["blog", "cms", "wordpress"],
+      "keywords": [
+        "blog",
+        "cms",
+        "wordpress"
+      ],
       "support": {
         "issues": "https://github.com/roots/wordpress/issues",
         "source": "https://github.com/roots/wordpress/tree/6.7.2"
@@ -533,7 +566,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["GPL-2.0-or-later"],
+      "license": [
+        "GPL-2.0-or-later"
+      ],
       "authors": [
         {
           "name": "John P. Bloch",
@@ -545,7 +580,9 @@
         }
       ],
       "description": "A custom installer to handle deploying WordPress with composer",
-      "keywords": ["wordpress"],
+      "keywords": [
+        "wordpress"
+      ],
       "support": {
         "issues": "https://github.com/roots/wordpress-core-installer/issues",
         "source": "https://github.com/roots/wordpress-core-installer/tree/master"
@@ -599,7 +636,9 @@
       },
       "type": "wordpress-core",
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["GPL-2.0-or-later"],
+      "license": [
+        "GPL-2.0-or-later"
+      ],
       "authors": [
         {
           "name": "WordPress Community",
@@ -608,7 +647,11 @@
       ],
       "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
       "homepage": "https://wordpress.org/",
-      "keywords": ["blog", "cms", "wordpress"],
+      "keywords": [
+        "blog",
+        "cms",
+        "wordpress"
+      ],
       "support": {
         "docs": "https://developer.wordpress.org/",
         "forum": "https://wordpress.org/support/",
@@ -656,7 +699,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Austin Pray",
@@ -697,10 +742,14 @@
       },
       "type": "library",
       "autoload": {
-        "files": ["wp-password-bcrypt.php"]
+        "files": [
+          "wp-password-bcrypt.php"
+        ]
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Scott Walkinshaw",
@@ -723,7 +772,11 @@
       ],
       "description": "WordPress plugin which replaces wp_hash_password and wp_check_password's phpass hasher with PHP 5.5's password_hash and password_verify using bcrypt.",
       "homepage": "https://roots.io/plugins/wp-password-bcrypt",
-      "keywords": ["bcrypt", "passwords", "wordpress"],
+      "keywords": [
+        "bcrypt",
+        "passwords",
+        "wordpress"
+      ],
       "support": {
         "forum": "https://discourse.roots.io/",
         "issues": "https://github.com/roots/wp-password-bcrypt/issues",
@@ -768,13 +821,17 @@
         }
       },
       "autoload": {
-        "files": ["bootstrap.php"],
+        "files": [
+          "bootstrap.php"
+        ],
         "psr-4": {
           "Symfony\\Polyfill\\Ctype\\": ""
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Gert de Pagter",
@@ -787,7 +844,12 @@
       ],
       "description": "Symfony polyfill for ctype functions",
       "homepage": "https://symfony.com",
-      "keywords": ["compatibility", "ctype", "polyfill", "portable"],
+      "keywords": [
+        "compatibility",
+        "ctype",
+        "polyfill",
+        "portable"
+      ],
       "support": {
         "source": "https://github.com/symfony/polyfill-ctype/tree/v1.31.0"
       },
@@ -838,13 +900,17 @@
         }
       },
       "autoload": {
-        "files": ["bootstrap.php"],
+        "files": [
+          "bootstrap.php"
+        ],
         "psr-4": {
           "Symfony\\Polyfill\\Mbstring\\": ""
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Nicolas Grekas",
@@ -857,7 +923,13 @@
       ],
       "description": "Symfony polyfill for the Mbstring extension",
       "homepage": "https://symfony.com",
-      "keywords": ["compatibility", "mbstring", "polyfill", "portable", "shim"],
+      "keywords": [
+        "compatibility",
+        "mbstring",
+        "polyfill",
+        "portable",
+        "shim"
+      ],
       "support": {
         "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
       },
@@ -902,14 +974,20 @@
         }
       },
       "autoload": {
-        "files": ["bootstrap.php"],
+        "files": [
+          "bootstrap.php"
+        ],
         "psr-4": {
           "Symfony\\Polyfill\\Php80\\": ""
         },
-        "classmap": ["Resources/stubs"]
+        "classmap": [
+          "Resources/stubs"
+        ]
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Ion Bazan",
@@ -926,7 +1004,12 @@
       ],
       "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
       "homepage": "https://symfony.com",
-      "keywords": ["compatibility", "polyfill", "portable", "shim"],
+      "keywords": [
+        "compatibility",
+        "polyfill",
+        "portable",
+        "shim"
+      ],
       "support": {
         "source": "https://github.com/symfony/polyfill-php80/tree/v1.31.0"
       },
@@ -993,7 +1076,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["BSD-3-Clause"],
+      "license": [
+        "BSD-3-Clause"
+      ],
       "authors": [
         {
           "name": "Graham Campbell",
@@ -1007,7 +1092,11 @@
         }
       ],
       "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-      "keywords": ["dotenv", "env", "environment"],
+      "keywords": [
+        "dotenv",
+        "env",
+        "environment"
+      ],
       "support": {
         "issues": "https://github.com/vlucas/phpdotenv/issues",
         "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.1"
@@ -1059,6 +1148,24 @@
       },
       "type": "wordpress-plugin",
       "homepage": "https://wordpress.org/plugins/seo-by-rank-math/"
+    },
+    {
+      "name": "wpackagist-plugin/varnish-http-purge",
+      "version": "5.2.2",
+      "source": {
+        "type": "svn",
+        "url": "https://plugins.svn.wordpress.org/varnish-http-purge/",
+        "reference": "tags/5.2.2"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://downloads.wordpress.org/plugin/varnish-http-purge.5.2.2.zip"
+      },
+      "require": {
+        "composer/installers": "^1.0 || ^2.0"
+      },
+      "type": "wordpress-plugin",
+      "homepage": "https://wordpress.org/plugins/varnish-http-purge/"
     },
     {
       "name": "wpackagist-plugin/wp-mail-smtp",

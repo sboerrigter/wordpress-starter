@@ -38,11 +38,12 @@
     "roots/wp-config": "*",
     "roots/wp-password-bcrypt": "*",
     "vlucas/phpdotenv": "*",
+    "koodimonni-language/core-nl_nl": "*",
     "wpackagist-plugin/limit-login-attempts": "*",
     "wpackagist-plugin/seo-by-rank-math": "*",
+    "wpackagist-plugin/varnish-http-purge": "*",
     "wpackagist-plugin/wp-mail-smtp": "*",
-    "wpengine/advanced-custom-fields-pro": "*",
-    "koodimonni-language/core-nl_nl": "*"
+    "wpengine/advanced-custom-fields-pro": "*"
   },
   "config": {
     "optimize-autoloader": true,
@@ -79,5 +80,10 @@
       ]
     },
     "wordpress-install-dir": "web/wp"
+  },
+  "autoload": {
+    "psr-4": {
+      "Starter\\": "web/wp-content/themes/starter/src"
+    }
   }
 }
