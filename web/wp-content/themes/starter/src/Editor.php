@@ -1,6 +1,6 @@
 <?php
 
-namespace Starter;
+namespace Theme;
 
 class Editor
 {

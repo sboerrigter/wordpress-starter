@@ -1,8 +1,8 @@
 <?php
 
-namespace Starter\PostTypes;
+namespace Theme\PostTypes;
 
-use Starter\Traits\HasFields;
+use Theme\Traits\HasFields;
 
 class Page
 {

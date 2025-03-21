@@ -1,6 +1,6 @@
 <?php
 
-namespace Starter;
+namespace Theme;
 
 use WP_Admin_Bar;
 

@@ -84,7 +84,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Starter\\": "web/wp-content/themes/starter/src"
+      "Theme\\": "web/wp-content/themes/starter/src"
     }
   }
 }

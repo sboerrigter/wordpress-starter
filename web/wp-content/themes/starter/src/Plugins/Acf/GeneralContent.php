@@ -1,5 +1,5 @@
 <?php
-namespace Starter\Plugins\Acf;
+namespace Theme\Plugins\Acf;
 
 class GeneralContent
 {
@@ -8,7 +8,7 @@ class GeneralContent
 
   public static function init()
   {
-    static::$title = __('General content', 'starter');
+    static::$title = __('General content', 'theme');
 
     add_action('acf/init', [static::class, 'addOptionsPage']);
     add_action('acf/init', [static::class, 'registerFields']);

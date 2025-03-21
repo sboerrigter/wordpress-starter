@@ -1,6 +1,6 @@
 <?php
 
-namespace Starter;
+namespace Theme;
 
 // Require functions
 require_once 'functions/component.php';
