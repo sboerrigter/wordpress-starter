@@ -36,7 +36,6 @@
     "roots/bedrock-autoloader": "*",
     "roots/wordpress": "*",
     "roots/wp-config": "*",
-    "roots/wp-password-bcrypt": "*",
     "vlucas/phpdotenv": "*",
     "koodimonni-language/core-nl_nl": "*",
     "wpackagist-plugin/limit-login-attempts": "*",
