@@ -10,9 +10,10 @@ require_once 'functions/image.php';
 Admin::init();
 Assets::init();
 Editor::init();
+Image::init();
 Media::init();
-Security::init();
 Menu::init();
+Security::init();
 WordPress::init();
 
 Plugins\Acf\GeneralContent::init();

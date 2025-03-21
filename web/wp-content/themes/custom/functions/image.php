@@ -3,8 +3,8 @@
 use Theme\Image;
 
 // Get image element based on a n array with arguments
-function image(array $attributes = [])
+function image(array $args = [])
 {
-  $image = new Image($attributes);
+  $image = new Image($args);
   echo $image->element();
 }
