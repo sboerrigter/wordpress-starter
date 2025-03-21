@@ -1,0 +1,27 @@
+@layer components {
+  .menu-open {
+    @apply !opacity-100 !translate-y-0 !flex !pointer-events-auto;
+  }
+
+  .menu-toggle-open {
+    @apply rotate-90;
+
+    .menu-toggle-line-1,
+    .menu-toggle-line-2,
+    .menu-toggle-line-3 {
+      @apply !bg-white;
+    }
+
+    .menu-toggle-line-1 {
+      @apply translate-y-1.5 rotate-45;
+    }
+
+    .menu-toggle-line-2 {
+      @apply opacity-0;
+    }
+
+    .menu-toggle-line-3 {
+      @apply -translate-y-1.5 -rotate-45;
+    }
+  }
+}

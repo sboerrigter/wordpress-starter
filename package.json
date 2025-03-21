@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "devDependencies": {
-    "@prettier/plugin-php": "*",
-    "@tailwindcss/vite": "*",
-    "prettier": "*",
-    "tailwindcss": "*"
+    "@prettier/plugin-php": "^0.22.4",
+    "@tailwindcss/vite": "^4.0.15",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.0.15"
   },
   "scripts": {
     "start": "vite",
@@ -19,6 +19,7 @@
     "plugins": [
       "@prettier/plugin-php"
     ],
+    "singleAttributePerLine": true,
     "singleQuote": true,
     "tabWidth": 2
   }

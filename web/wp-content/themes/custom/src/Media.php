@@ -44,7 +44,7 @@ class Media
   }
 
   // Disable attachment canonical redirect links
-  function canonical(string $url)
+  public static function canonical(string $url)
   {
     static::redirect();
 
@@ -52,7 +52,7 @@ class Media
   }
 
   // Disable attachment links
-  function disable_link(string $url, int $id)
+  public static function disable_link(string $url, int $id)
   {
     if ($attachment_url = wp_get_attachment_url($id)) {
       return $attachment_url;
@@ -62,8 +62,12 @@ class Media
   }
 
   // Randomize attachment slugs using UUIDs to avoid slug reservation
-  function modify_slug(string $slug, string $id, string $status, string $type)
-  {
+  public static function modify_slug(
+    string $slug,
+    string $id,
+    string $status,
+    string $type
+  ) {
     if ($type !== 'attachment') {
       return $slug;
     }

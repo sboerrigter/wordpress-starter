@@ -10,9 +10,9 @@ export default defineConfig({
     assetsDir: '',
     emptyOutDir: true,
     manifest: true,
-    outDir: `web/wp-content/themes/starter/dist`,
+    outDir: `web/wp-content/themes/custom/dist`,
     rollupOptions: {
-      input: 'web/wp-content/themes/starter/scripts/index.js',
+      input: 'web/wp-content/themes/custom/scripts/app.js',
     },
   },
   plugins: [

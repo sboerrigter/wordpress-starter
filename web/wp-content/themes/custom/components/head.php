@@ -12,5 +12,5 @@
   <?php wp_head(); ?>
   </head>
 
-  <body class="antialiased">
+  <body class="font-[Inter] text-slate-800 antialiased">
     <?php wp_body_open(); ?>

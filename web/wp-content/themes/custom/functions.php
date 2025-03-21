@@ -11,6 +11,7 @@ Assets::init();
 Editor::init();
 Media::init();
 Security::init();
+Menu::init();
 WordPress::init();
 
 Plugins\Acf\GeneralContent::init();
