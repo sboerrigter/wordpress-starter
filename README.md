@@ -1,6 +1,8 @@
 # WordPress Starter
 
-This is a WordPress starter project for custom theme development with Composer, Gutenberg, Advanced Custom Fields, Vite, Tailwind CSS, Prettier and Deployer. Just the way I like it. It contains a few usefull PHP and JS packages and a custom starter theme with some simple templates, styling and classes to get a head start with custom theme development.
+This is a WordPress starter project for custom theme development with Composer, Gutenberg, Advanced Custom Fields, Vite, Tailwind CSS, Prettier and Deployer. Just the way I like it.
+
+It contains a few useful WordPress plugins, PHP dependencies and JavaScript packages and a custom starter theme to get a head start with custom theme development. The theme contains a few simple templates, styles and scripts and some PHP classes with sensible defaults that can be easily customized.
 
 ## Features
 
