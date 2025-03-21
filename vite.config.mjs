@@ -2,13 +2,17 @@ import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  server: {
+    cors: true,
+    strictPort: true,
+  },
   build: {
     assetsDir: '',
     emptyOutDir: true,
     manifest: true,
     outDir: `web/wp-content/themes/starter/dist`,
     rollupOptions: {
-      main: 'web/wp-content/themes/starter/scripts/main.js',
+      input: 'web/wp-content/themes/starter/scripts/index.js',
     },
   },
   plugins: [

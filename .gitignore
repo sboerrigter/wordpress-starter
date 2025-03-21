@@ -9,6 +9,7 @@
 /web/wp-content/languages
 /web/wp-content/mu-plugins
 /web/wp-content/plugins
+/web/wp-content/themes/starter/dist
 /web/wp-content/upgrade
 /web/wp-content/uploads
 auth.json
