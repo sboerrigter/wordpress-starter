@@ -1,6 +1,6 @@
-# WordPress Starter
+# WordPress starter
 
-WordPress starter project for custom theme development with Composer, Vite, Tailwind CSS, Prettier, Deployer, Gutenberg, Advanced Custom Fields and other tools I like.
+WordPress starter project for custom theme development with Composer, Glide, Vite, Tailwind CSS, Prettier, Deployer, Gutenberg, Advanced Custom Fields and other tools I like.
 
 It contains a few useful WordPress plugins, development tools and a custom starter theme to get a head start with custom theme development. The theme contains a few simple templates, styles and scripts and some PHP classes with sensible defaults that can be easily customized.
 
@@ -13,6 +13,7 @@ This starter project uses the folowing PHP dependencies and JavaScript packages 
 - [Composer](https://getcomposer.org/) - PHP dependency manager
 - [Bedrock autoloader](https://roots.io/bedrock/) - Autoloader for WordPress plugins
 - [Env](https://github.com/oscarotero/env) and [PHP dotenv](https://github.com/vlucas/phpdotenv) - Loads environment variables from `.env`
+- [Glide](https://glide.thephpleague.com/) - Image resizing and manipulation
 - [NPM](https://www.npmjs.com/) - Frontend package manager
 - [Vite](https://vite.dev/) - Frontend build tool and local development server
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
@@ -30,6 +31,7 @@ This starter project uses the folowing PHP dependencies and JavaScript packages 
 - [Limit login attempts](https://wordpress.org/plugins/limit-login-attempts/) - Brute force protection
 - [Proxy cache purge](https://wordpress.org/plugins/varnish-http-purge/) - Purges (Varnish) cache when content is updated
 - [WP Mail SMTP](https://wpmailsmtp.com/) - Email delivery
+- [WP Languages](https://wp-languages.github.io/) - WordPress language packs via Composer
 
 ## Requirements
 
