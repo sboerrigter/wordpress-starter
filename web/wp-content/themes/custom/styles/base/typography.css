@@ -1,0 +1,6 @@
+@layer components {
+  a {
+    @apply text-blue-500 hover:text-blue-600;
+    @apply transition-colors;
+  }
+}

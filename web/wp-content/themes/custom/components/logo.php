@@ -1,3 +1,3 @@
-<div class="text-xl font-bold lg:text-2xl">
+<div class="text-xl font-bold">
     <?= get_bloginfo('sitename') ?>
 </div>

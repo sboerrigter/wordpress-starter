@@ -24,4 +24,14 @@
       @apply -translate-y-1.5 -rotate-45;
     }
   }
+
+  .menu-item-open {
+    .menu-item-toggle {
+      @apply !rotate-0;
+    }
+
+    .menu-item-children {
+      @apply !flex;
+    }
+  }
 }
