@@ -1,12 +1,12 @@
 # WordPress Starter
 
-This is a WordPress starter project for custom theme development with Composer, Gutenberg, Advanced Custom Fields, Vite, Tailwind CSS, Prettier and Deployer. Just the way I like it.
+WordPress starter project for custom theme development with Composer, Vite, Tailwind CSS, Prettier and other tools I like.
 
-It contains a few useful WordPress plugins, PHP dependencies and JavaScript packages and a custom starter theme to get a head start with custom theme development. The theme contains a few simple templates, styles and scripts and some PHP classes with sensible defaults that can be easily customized.
+It contains a few useful WordPress plugins, development tools and a custom starter theme to get a head start with custom theme development. The theme contains a few simple templates, styles and scripts and some PHP classes with sensible defaults that can be easily customized.
 
 ## Features
 
-This starter project uses the folowing development tools and plugins, but can be easily customized:
+This starter project uses the folowing PHP dependencies and JavaScript packages by default. Of course, this can be customized to your liking or the project specific needs:
 
 ### Development tools
 
@@ -14,12 +14,12 @@ This starter project uses the folowing development tools and plugins, but can be
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [Prettier](https://prettier.io/) - Code formatting
 - [Prettier PHP](https://github.com/prettier/plugin-php) - PHP code formatting
-- [Deployer](https://deployer.org/) - Deployment tool
+- [Deployer](https://deployer.org/) - PHP deployment tool
 - [GitHub actions](https://github.com/features/actions) - Automatic deployment
 - [NPM](https://www.npmjs.com/) - Frontend package manager
 - [Composer](https://getcomposer.org/) - PHP dependency manager
 - [Bedrock autoloader](https://roots.io/bedrock/) - Autoloader for WordPress plugins
-- [Env](https://github.com/oscarotero/env) and [PHP dotenv](https://github.com/vlucas/phpdotenv) - Loads environment variables from .env
+- [Env](https://github.com/oscarotero/env) and [PHP dotenv](https://github.com/vlucas/phpdotenv) - Loads environment variables from `.env`
 
 ### WordPress and plugins
 
@@ -45,7 +45,7 @@ Ensure you have the following installed on your system:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/wordpress-starter.git
+   git clone https://github.com/sboerrigter/wordpress-starter.git
    cd wordpress-starter
    ```
 
