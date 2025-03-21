@@ -43,7 +43,8 @@
     "wpackagist-plugin/seo-by-rank-math": "*",
     "wpackagist-plugin/varnish-http-purge": "*",
     "wpackagist-plugin/wp-mail-smtp": "*",
-    "wpengine/advanced-custom-fields-pro": "*"
+    "wpengine/advanced-custom-fields-pro": "*",
+    "ramsey/uuid": "^4.7"
   },
   "config": {
     "optimize-autoloader": true,
