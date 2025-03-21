@@ -6,12 +6,12 @@ class Assets
 {
   public static function init()
   {
-    add_action('wp_enqueue_scripts', [static::class, 'enqueueStyles']);
-    add_action('wp_enqueue_scripts', [static::class, 'enqueueScripts']);
+    add_action('wp_enqueue_scripts', [static::class, 'enqueue_styles']);
+    add_action('wp_enqueue_scripts', [static::class, 'enqueue_scripts']);
   }
 
   // Enqueue styles
-  public static function enqueueStyles()
+  public static function enqueue_styles()
   {
     wp_enqueue_style(
       'main',
@@ -22,7 +22,7 @@ class Assets
   }
 
   // Enqueue scripts
-  public static function enqueueScripts()
+  public static function enqueue_scripts()
   {
     wp_enqueue_script(
       'main',

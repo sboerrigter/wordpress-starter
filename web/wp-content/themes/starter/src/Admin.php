@@ -8,27 +8,27 @@ final class Admin
 {
   public static function init()
   {
-    add_action('admin_head', [static::class, 'adminNotices']);
-    add_action('admin_bar_menu', [static::class, 'adminBar']);
-    add_action('admin_menu', [static::class, 'adminMenu']);
+    add_action('admin_head', [static::class, 'admin_notices']);
+    add_action('admin_bar_menu', [static::class, 'admin_bar']);
+    add_action('admin_menu', [static::class, 'admin_menu']);
     add_filter('custom_menu_order', '__return_true');
-    add_action('menu_order', [static::class, 'menuOrder']);
+    add_action('menu_order', [static::class, 'menu_order']);
   }
 
   // Hide WordPress update notice
-  public static function adminNotices()
+  public static function admin_notices()
   {
     remove_action('admin_notices', 'update_nag', 3);
   }
 
   // Remove admin bar items
-  public static function adminBar(WP_Admin_Bar $adminBar)
+  public static function admin_bar(WP_Admin_Bar $admin_bar)
   {
-    $adminBar->remove_menu('comments');
+    $admin_bar->remove_menu('comments');
   }
 
   // Add and remove admin menu items
-  public static function adminMenu()
+  public static function admin_menu()
   {
     global $menu;
 
@@ -40,22 +40,23 @@ final class Admin
   }
 
   // Reorder admin menu items and put any items not in this list at the end
-  public static function menuOrder(array $order)
+  public static function menu_order(array $order)
   {
     $newOrder = [
       'index.php', // Dashboard
 
-      'separator1', // ---
+      'separator1',
 
       'edit.php?post_type=page', // Pages
       'edit.php', // Posts
 
-      'separator2', // ---
+      'separator2',
 
       'general-content', // General content
       'upload.php', // Media
+      'edit-comments.php', // Comments
 
-      'separator3', // ---
+      'separator3',
 
       'themes.php', // Appaerance
       'plugins.php', // Plugins
@@ -63,7 +64,7 @@ final class Admin
       'tools.php', // Tools
       'options-general.php', // Settings
 
-      'separator-last', // ---
+      'separator-last',
 
       'edit.php?post_type=acf-field-group', // ACF
       'varnish-page', // Proxy cache

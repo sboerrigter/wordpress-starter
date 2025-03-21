@@ -22,14 +22,14 @@ class Editor
 
   public static function init()
   {
-    add_filter('allowed_block_types_all', [static::class, 'allowedTypes']);
+    add_filter('allowed_block_types_all', [static::class, 'allowed_types']);
     add_filter('block_editor_settings_all', [static::class, 'settings']);
-    add_action('init', [static::class, 'themeSupport']);
+    add_action('init', [static::class, 'theme_support']);
     add_action('enqueue_block_editor_assets', [static::class, 'enqueue']);
   }
 
   // Define allowed block types
-  public static function allowedTypes()
+  public static function allowed_types()
   {
     $customBlocks = array_map(function ($name) {
       return "acf/{$name}";
@@ -52,7 +52,7 @@ class Editor
   }
 
   // Disable block editor features
-  public static function themeSupport()
+  public static function theme_support()
   {
     add_theme_support('disable-custom-colors');
     add_theme_support('disable-custom-font-sizes');
