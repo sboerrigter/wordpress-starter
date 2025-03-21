@@ -4,7 +4,7 @@ namespace Theme;
 
 class Assets
 {
-  static $scriptPath = 'web/wp-content/themes/custom/scripts/index.js';
+  static $scriptPath = 'web/wp-content/themes/custom/scripts/app.js';
 
   public static function init()
   {
