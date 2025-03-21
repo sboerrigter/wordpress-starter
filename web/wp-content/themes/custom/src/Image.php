@@ -10,11 +10,18 @@ class Image
 {
   private int $id;
   private string $url;
-  private array $attributes;
   private string $fit;
   private array $widths;
-  private int $width;
-  private int $height;
+
+  public int $height;
+  public int $width;
+  public string $alt;
+  public string $class;
+  public string $loading;
+  public string $size;
+  public string $sizes;
+  public string $src;
+  public string $srcset;
 
   public static function init()
   {
@@ -41,9 +48,10 @@ class Image
       $this->url = $url;
 
       $alt = get_post_meta($this->id, '_wp_attachment_image_alt', true);
-      $args['alt'] = $args['alt'] ?? $alt;
+      $this->alt = $args['alt'] ?? $alt;
     } else {
       $this->url = $args['src'];
+      $this->alt = $args['alt'] ?? '';
     }
 
     // Set other properties
@@ -53,36 +61,13 @@ class Image
     $this->widths = $args['widths'] ?? [];
 
     // Set image attributes
-    $this->attributes['alt'] = $args['alt'];
-    $this->attributes['class'] = $args['class'] ?? 'object-cover bg-slate-600';
-    $this->attributes['height'] = $args['height'];
-    $this->attributes['loading'] = $args['loading'] ?? 'lazy';
-    $this->attributes['sizes'] = $args['sizes'] ?? 'auto';
-    $this->attributes['src'] = $this->src();
-    $this->attributes['srcset'] = $this->srcset();
-    $this->attributes['width'] = $args['width'];
-  }
-
-  // Get <img> element with arguments
-  public function element()
-  {
-    $attributes = $this->attributes;
-
-    // Remove empty and non string values attributes
-    $attributes = array_filter($attributes, function ($value) {
-      return !empty($value) && (is_string($value) || is_numeric($value));
-    });
-
-    // Map arguments array to string
-    $attributes = implode(
-      ' ',
-      array_map(function ($key) use ($attributes) {
-        $value = strval($attributes[$key]);
-        return "{$key}='{$value}'";
-      }, array_keys($attributes))
-    );
-
-    return "<img {$attributes} />";
+    $this->class = $args['class'] ?? 'object-cover bg-slate-600';
+    $this->height = $args['height'];
+    $this->loading = $args['loading'] ?? 'lazy';
+    $this->sizes = $args['sizes'] ?? 'auto';
+    $this->src = $this->src();
+    $this->srcset = $this->srcset();
+    $this->width = $args['width'];
   }
 
   private function src()
