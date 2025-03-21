@@ -5,9 +5,9 @@
   "type": "module",
   "devDependencies": {
     "@prettier/plugin-php": "*",
-    "@tailwindcss/vite": "^4.0.15",
+    "@tailwindcss/vite": "*",
     "prettier": "*",
-    "tailwindcss": "^4.0.15"
+    "tailwindcss": "*"
   },
   "scripts": {
     "start": "vite",
