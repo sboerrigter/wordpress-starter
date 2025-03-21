@@ -2,6 +2,6 @@
   .wrapper {
     @apply mx-auto;
     @apply px-5;
-    @apply w-full max-w-screen-xl;
+    @apply w-full max-w-[1240px];
   }
 }

@@ -1,9 +1,9 @@
 <header class="wrapper">
-  <div class="flex flex-col items-center p-5 bg-slate-100 rounded-lg">
-    <?= image([
-      'src' => get_field('_thumbnail_id'),
-      'width' => 1200,
-      'height' => 900,
-    ]) ?>
-  </div>
+  <?= image([
+    'class' => 'rounded-lg max-h-[400px] object-cover',
+    'src' => get_field('_thumbnail_id'),
+    'width' => 1200,
+    'height' => 900,
+    'widths' => [500, 300, 200],
+  ]) ?>
 </header>
