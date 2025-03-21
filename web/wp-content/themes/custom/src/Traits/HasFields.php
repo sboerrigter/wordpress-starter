@@ -19,7 +19,7 @@ trait HasFields
         'name' => '_thumbnail_id',
         'label' => __('Image', 'starter'),
         'type' => 'image',
-        'return_format' => 'id',
+        'return_format' => 'url',
         'min_width' => 1200,
         'min_height' => 900,
         'required' => true,
