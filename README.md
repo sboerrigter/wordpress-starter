@@ -1,8 +1,6 @@
 # WordPress Starter
 
-WordPress starter project for custom theme development with Composer, Vite, Tailwind CSS, Prettier and other tools I like.
-
-It contains a few useful WordPress plugins, development tools and a custom starter theme to get a head start with custom theme development. The theme contains a few simple templates, styles and scripts and some PHP classes with sensible defaults that can be easily customized.
+WordPress starter project for custom theme development with Composer, Vite, Tailwind CSS, Prettier and other tools I like. It contains a few useful WordPress plugins, development tools and a custom starter theme to get a head start with custom theme development. The theme contains a few simple templates, styles and scripts and some PHP classes with sensible defaults that can be easily customized.
 
 ## Features
 
