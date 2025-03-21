@@ -2,13 +2,12 @@
 <div class="
   menu flex flex-col z-10
 
-  max-lg:bg-slate-800 max-lg:w-full max-lg:min-h-screen max-lg:p-5 max-lg:pt-20
+  max-lg:bg-slate-800
+  max-lg:w-full max-lg:min-h-screen max-lg:p-5 max-lg:pt-20
   max-lg:absolute top-0 left-0
   max-lg:opacity-0 max-lg:transition-opacity max-lg:-translate-y-full max-lg:pointer-events-none
 
   lg:flex-row lg:py-4
-
-  menu-open
 ">
   <?php foreach (Theme\Menu::items('main') as $item) { ?>
     <?= component('menu-item', ['item' => $item]) ?>
