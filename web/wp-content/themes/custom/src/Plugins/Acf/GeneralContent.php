@@ -20,6 +20,7 @@ class GeneralContent
       'menu_slug' => static::$name,
       'menu_title' => static::$title,
       'page_title' => static::$title,
+      'icon_url' => 'dashicons-welcome-widgets-menus',
     ]);
   }
 
