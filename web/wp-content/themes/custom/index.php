@@ -1,6 +1,6 @@
 <?= component('head') ?>
 <?= component('header') ?>
 <?= component('hero') ?>
-<?= component('posts') ?>
+<?= component('content') ?>
 <?= component('cta') ?>
 <?= component('footer') ?>
