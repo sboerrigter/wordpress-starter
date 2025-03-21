@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "devDependencies": {
     "@prettier/plugin-php": "*",
-    "prettier": "*"
+    "@tailwindcss/vite": "^4.0.15",
+    "prettier": "*",
+    "tailwindcss": "^4.0.15"
   },
   "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "dev": "vite",
     "format": "npx prettier . --write"
   },
   "prettier": {
@@ -14,8 +19,5 @@
     ],
     "singleQuote": true,
     "tabWidth": 2
-  },
-  "dependencies": {
-    "tailwind": "^4.0.0"
   }
 }
