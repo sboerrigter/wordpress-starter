@@ -1,6 +1,7 @@
 {
   "name": "wordpress-starter",
   "version": "1.0.0",
+  "type": "module",
   "devDependencies": {
     "@prettier/plugin-php": "*",
     "@tailwindcss/vite": "^4.0.15",
