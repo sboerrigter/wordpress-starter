@@ -23,12 +23,6 @@ class WordPress
     remove_action('template_redirect', 'wp_shortlink_header', 11);
     remove_action('template_redirect', 'rest_output_link_header', 11);
 
-    // Redirect attachment pages to the attachment files
-    add_filter('template_redirect', [
-      static::class,
-      'disable_attachment_pages',
-    ]);
-
     // Disable feeds
     add_action('do_feed', [static::class, 'disable_feeds'], 1);
     add_action('do_feed_atom', [static::class, 'disable_feeds'], 1);
