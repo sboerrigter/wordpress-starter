@@ -134,8 +134,13 @@ class Image
   {
     $uri = strtok($_SERVER['REQUEST_URI'], '?');
 
+    // Get and escape URL parameters
+    $params = array_map(function ($param) {
+      return esc_attr($param);
+    }, $_GET);
+
     // Bail if this is not an image request or if 'w' parameter is not present
-    if (!str_starts_with($uri, '/uploads/') || !isset($_GET['w'])) {
+    if (!str_starts_with($uri, '/uploads/') || !isset($params['w'])) {
       return;
     }
 
@@ -146,7 +151,7 @@ class Image
         'cache' => 'wp-content/uploads/glide-cache',
         'max_image_size' => 2400 * 2400,
       ]);
-      $server->outputImage($uri, $_GET);
+      $server->outputImage($uri, $params);
     } catch (FileNotFoundException $exception) {
       status_header(404);
       include get_query_template('404');
