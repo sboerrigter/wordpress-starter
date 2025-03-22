@@ -61,7 +61,7 @@ class Image
     $this->widths = $args['widths'] ?? [];
 
     // Set image attributes
-    $this->class = implode(' ', [$args['class'], 'object-cover bg-slate-600']);
+    $this->class = implode(' ', [$args['class'], 'object-cover bg-gray-600']);
     $this->height = $args['height'];
     $this->loading = $args['loading'] ?? 'lazy';
     $this->sizes = $args['sizes'] ?? 'auto';

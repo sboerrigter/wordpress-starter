@@ -4,7 +4,7 @@ if (!get_field('cta_title', 'option')) {
 } ?>
 
 <footer class="wrapper">
-  <div class="flex flex-col items-center p-5 bg-slate-100 rounded-lg">
+  <div class="flex flex-col items-center p-5 bg-gray-100 rounded-lg">
     <h2>
       <?= get_field('cta_title', 'option') ?>
     </h2>
