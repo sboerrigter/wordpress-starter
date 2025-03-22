@@ -6,7 +6,7 @@ $image = new Image($args);
 
 <img
     alt="<?= $image->alt ?>"
-    class="<?= $image->class ?> bg-blue-900"
+    class="<?= $image->class ?>"
     height="<?= $image->height ?>"
     loading="<?= $image->loading ?>"
     sizes="<?= $image->sizes ?>"

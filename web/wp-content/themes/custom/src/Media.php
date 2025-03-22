@@ -20,11 +20,11 @@ class Media
   // Set image sizes
   public static function image_sizes()
   {
-    update_option('thumbnail_size_w', 240);
-    update_option('thumbnail_size_h', 240);
-    update_option('medium_size_w', 480);
+    update_option('thumbnail_size_w', 180);
+    update_option('thumbnail_size_h', 180);
+    update_option('medium_size_w', 360);
     update_option('medium_size_h', '');
-    update_option('large_size_w', 840);
+    update_option('large_size_w', 780);
     update_option('large_size_h', '');
   }
 

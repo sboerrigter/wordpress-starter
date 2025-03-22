@@ -61,7 +61,7 @@ class Image
     $this->widths = $args['widths'] ?? [];
 
     // Set image attributes
-    $this->class = $args['class'] ?? 'object-cover bg-slate-600';
+    $this->class = implode(' ', [$args['class'], 'object-cover bg-slate-600']);
     $this->height = $args['height'];
     $this->loading = $args['loading'] ?? 'lazy';
     $this->sizes = $args['sizes'] ?? 'auto';
@@ -118,8 +118,11 @@ class Image
     // Replace image URL so it is handeled by Glide
     $src = str_replace('/wp-content/uploads', '/uploads', $this->url);
 
-    // Add fit property
-    $params = array_merge($params, ['fit' => $this->fit]);
+    // Add fit and format property
+    $params = array_merge($params, [
+      'fit' => $this->fit,
+      'fm' => 'webp',
+    ]);
 
     // Return image URL with Glide parameters
     $query = http_build_query($params);
@@ -140,7 +143,7 @@ class Image
     try {
       $server = ServerFactory::create([
         'source' => 'wp-content',
-        'cache' => 'wp-content/uploads/cache',
+        'cache' => 'wp-content/uploads/glide-cache',
         'max_image_size' => 2400 * 2400,
       ]);
       $server->outputImage($uri, $_GET);
