@@ -4,6 +4,7 @@ namespace Theme;
 
 // Require functions
 require_once 'functions/component.php';
+require_once 'functions/debug.php';
 
 // Initialize classes
 Admin::init();
