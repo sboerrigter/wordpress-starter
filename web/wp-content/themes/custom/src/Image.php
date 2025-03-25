@@ -54,20 +54,18 @@ class Image
       $this->alt = $args['alt'] ?? '';
     }
 
-    // Set other properties
-    $this->fit = $args['fit'] ?? 'crop';
-    $this->height = $args['height'];
-    $this->width = $args['width'];
-    $this->widths = $args['widths'] ?? [];
-
-    // Set image attributes
+    // Set image properties
     $this->class = implode(' ', [$args['class'], 'object-cover bg-gray-600']);
+    $this->fit = $args['fit'] ?? 'crop';
     $this->height = $args['height'];
     $this->loading = $args['loading'] ?? 'lazy';
     $this->sizes = $args['sizes'] ?? 'auto';
+    $this->width = $args['width'];
+    $this->widths = $args['widths'] ?? [];
+
+    // Set src and srcset properties after we've set the other properties
     $this->src = $this->src();
     $this->srcset = $this->srcset();
-    $this->width = $args['width'];
   }
 
   private function src()
