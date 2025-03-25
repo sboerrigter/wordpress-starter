@@ -4,15 +4,15 @@
 *.log
 /node_modules
 /vendor
-/web/wp
-/web/wp-content/cache
-/web/wp-content/languages
-/web/wp-content/mu-plugins
-/web/wp-content/plugins
-/web/wp-content/themes/custom/dist
-/web/wp-content/upgrade
-/web/wp-content/uploads
 auth.json
+web/wp-content/cache/*
+web/wp-content/languages/*
+web/wp-content/mu-plugins/*
+web/wp-content/plugins/*
+web/wp-content/themes/custom/dist/*
+web/wp-content/upgrade/*
+web/wp-content/uploads/*
+web/wp/*
 
 !.env.example
 !web/wp-content/languages/.gitkeep
