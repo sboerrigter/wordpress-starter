@@ -11,24 +11,20 @@
       "homepage": "https://www.bonsjoerd.fr"
     }
   ],
-  "repositories": [
-    {
+  "repositories": {
+    "wpackagist": {
       "type": "composer",
-      "url": "https://wpackagist.org",
-      "only": [
-        "wpackagist-plugin/*",
-        "wpackagist-theme/*"
-      ]
+      "url": "https://wpackagist.org"
     },
-    {
+    "wp-languages": {
       "type": "composer",
       "url": "https://wp-languages.github.io"
     },
-    {
+    "wpengine": {
       "type": "composer",
       "url": "https://connect.advancedcustomfields.com"
     }
-  ],
+  },
   "require": {
     "composer/installers": "*",
     "oscarotero/env": "*",
