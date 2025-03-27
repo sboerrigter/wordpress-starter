@@ -22,7 +22,6 @@ trait HasFields
         'return_format' => 'id',
         'min_width' => 1200,
         'min_height' => 900,
-        'required' => true,
       ],
     ];
   }
