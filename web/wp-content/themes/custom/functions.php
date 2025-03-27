@@ -9,6 +9,7 @@ require_once 'functions/debug.php';
 // Initialize classes
 Admin::init();
 Assets::init();
+Content::init();
 Editor::init();
 Image::init();
 Media::init();
