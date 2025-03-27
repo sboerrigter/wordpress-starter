@@ -7,5 +7,5 @@
   width="20"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <polyline points="14 8 10 12 6 8"></polyline>
+ <polyline points="8 6 12 10 8 14"></polyline>
 </svg>
