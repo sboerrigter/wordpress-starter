@@ -52,7 +52,7 @@ class GeneralContent
           'type' => 'wysiwyg',
           'media_upload' => false,
           'tabs' => 'visual',
-          'toolbar' => 'minial',
+          'toolbar' => 'basic',
         ],
         [
           'key' => "field_{$key}_cta_button",
