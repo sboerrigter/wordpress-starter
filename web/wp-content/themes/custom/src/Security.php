@@ -19,7 +19,7 @@ class Security
     add_filter('the_generator', '__return_empty_string');
   }
 
-  function disable_rest_endpoints(array $endpoints)
+  static function disable_rest_endpoints(array $endpoints)
   {
     if (!is_user_logged_in()) {
       if (isset($endpoints['/wp/v2/users'])) {
