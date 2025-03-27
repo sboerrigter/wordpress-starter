@@ -12,7 +12,8 @@ class Content
   // Remove empty paragraphs from the content
   public static function remove_empty_paragraphs(string $content)
   {
-    //  @todo
+    $content = str_replace('<p></p>', '', $content);
+
     return $content;
   }
 }
