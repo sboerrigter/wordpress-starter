@@ -10,7 +10,7 @@
         flex gap-1 items-center max-lg:w-full
         text-white/75 hover:text-white/100
         <?= !isset($isChild)
-          ? 'p-3 lg:px-4 lg:py-3 lg:text-gray-800 lg:hover:text-blue-500'
+          ? 'p-3 lg:px-4 lg:py-3 lg:text-gray-800 lg:hover:text-blue-600'
           : 'p-1 lg:px-4 lg:w-full' ?>
       "
       href="<?= $item->url ?>"

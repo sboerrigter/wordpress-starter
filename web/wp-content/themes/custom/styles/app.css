@@ -7,12 +7,8 @@
 
 @layer base {
   * {
+    @apply accent-blue-600;
     @apply border-gray-200;
-  }
-
-  p {
-    @apply text-base/7;
-    @apply mb-7;
   }
 
   h1,
@@ -22,19 +18,50 @@
   h5,
   h6 {
     @apply font-extrabold leading-normal;
-    @apply text-base/7;
+    @apply text-lg/normal mb-2;
+
+    strong {
+      @apply font-extrabold;
+    }
   }
 
   h1 {
-    @apply text-5xl/tight;
+    @apply text-3xl/snug mb-6;
+    @apply xs:text-4xl/tight xs:mb-8;
+    @apply md:text-5xl/tight md:mb-10;
   }
 
   h2 {
-    @apply text-4xl/tight;
+    @apply text-2xl/normal mb-4;
+    @apply md:text-3xl/snug md:mb-6;
   }
 
   h3 {
-    @apply text-xl/tight;
+    @apply text-xl mb-3;
+    @apply md:text-2xl/normal md:mb-4;
+  }
+
+  p {
+    @apply text-base/7 mb-6 text-gray-600;
+  }
+
+  ol,
+  ul {
+    @apply list-inside list-disc text-gray-600 mb-6;
+    @apply marker:text-blue-600 marker:font-semibold;
+
+    ol,
+    ul {
+      @apply ml-6 mb-0;
+    }
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply my-1;
   }
 
   a {
@@ -43,8 +70,16 @@
     @apply transition-colors;
   }
 
+  strong {
+    @apply font-semibold text-gray-800;
+  }
+
   hr {
     @apply my-7;
+  }
+
+  ::selection {
+    @apply bg-blue-600 text-white;
   }
 }
 
