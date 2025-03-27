@@ -45,7 +45,7 @@
       menu-item-children hidden flex-col
       max-lg:ml-5 max-lg:mb-5
 
-      lg:group-hover:flex lg:bg-gray-800 lg:rounded lg:w-60 lg:py-3
+      lg:group-hover:flex lg:bg-blue-900 lg:rounded lg:w-60 lg:py-3
       lg:absolute lg:left-0 lg:group-last:left-auto lg:group-last:right-0
     ">
       <?php foreach ($item->children as $item) { ?>
