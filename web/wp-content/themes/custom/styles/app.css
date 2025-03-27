@@ -1,6 +1,99 @@
 @import 'tailwindcss';
 
-@import './base/typography.css';
-@import './components/menu.css';
-@import './components/wrapper.css';
-@import './utilities/center.css';
+@theme {
+  --breakpoint-2xs: 375px;
+  --breakpoint-xs: 480px;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
+  p {
+    @apply text-base/7;
+    @apply mb-7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-extrabold leading-normal;
+    @apply text-base/7;
+  }
+
+  h1 {
+    @apply text-5xl/tight;
+  }
+
+  h2 {
+    @apply text-4xl/tight;
+  }
+
+  h3 {
+    @apply text-xl/tight;
+  }
+
+  a {
+    @apply text-blue-600 hover:text-blue-800;
+    @apply underline underline-offset-2 font-semibold;
+    @apply transition-colors;
+  }
+
+  hr {
+    @apply my-7;
+  }
+}
+
+@layer components {
+  .menu-open {
+    @apply !opacity-100 !translate-y-0 !flex !pointer-events-auto;
+  }
+
+  .menu-toggle-open {
+    @apply rotate-90;
+
+    .menu-toggle-line-1,
+    .menu-toggle-line-2,
+    .menu-toggle-line-3 {
+      @apply !bg-white;
+    }
+
+    .menu-toggle-line-1 {
+      @apply translate-y-1.5 rotate-45;
+    }
+
+    .menu-toggle-line-2 {
+      @apply opacity-0;
+    }
+
+    .menu-toggle-line-3 {
+      @apply -translate-y-1.5 -rotate-45;
+    }
+  }
+
+  .menu-item-open {
+    .menu-item-toggle {
+      @apply !rotate-0;
+    }
+
+    .menu-item-children {
+      @apply !flex;
+    }
+  }
+
+  .wrapper {
+    @apply mx-auto;
+    @apply px-5;
+    @apply w-full max-w-[1240px];
+  }
+}
+
+@layer utilities {
+  .center {
+    @apply flex items-center justify-center;
+  }
+}
