@@ -36,9 +36,6 @@ class WordPress
     add_filter('comments_open', '__return_false');
 
     // Remove emojis
-    // WordPress 6.4 deprecated the use of print_emoji_styles() function, but it has
-    // been retained for backward compatibility purposes
-    // https://make.wordpress.org/core/2023/10/17/replacing-hard-coded-style-tags-with-wp_add_inline_style/
     remove_action('wp_head', 'print_emoji_detection_script', 7);
     remove_action('admin_print_scripts', 'print_emoji_detection_script');
     remove_action('wp_print_styles', 'print_emoji_styles');

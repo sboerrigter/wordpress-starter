@@ -35,7 +35,6 @@ class Menu
   }
 
   // Build a nested array from a flat menu items array
-  // @see https://wordpress.stackexchange.com/questions/170033/convert-output-of-nav-menu-items-into-a-tree-like-multidimensional-array
   private static function buildTree(array &$items, $parentId = 0)
   {
     $output = [];
