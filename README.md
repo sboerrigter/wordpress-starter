@@ -47,25 +47,21 @@ Ensure you have the following installed on your system:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sboerrigter/wordpress-starter.git
-   cd wordpress-starter
+   git clone https://github.com/sboerrigter/wordpress-starter.git your-project
+   cd your-project
    ```
 
-2. Install PHP dependencies:
+2. Copy `.env.example` to `.env` and configure environment-specific variables like `WP_ENV`, `WP_HOME`, database credentials and debug settings.
 
    ```bash
-   composer install
+   cp .env.example .env
    ```
 
-3. Install JavaScript dependencies:
+3. Run `npm start` to install Composer and NPM dependencies and run vite:
 
    ```bash
-   npm install
-   # or
-   yarn install
+   npm start
    ```
-
-4. Set up your `.env` file for environment-specific configurations.
 
 ## Usage
 
