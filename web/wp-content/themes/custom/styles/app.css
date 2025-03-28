@@ -54,7 +54,7 @@
   }
 
   p {
-    @apply text-base/7 mb-6 text-gray-600;
+    @apply text-base/[1.5] mb-6 text-gray-600;
   }
 
   ol,
