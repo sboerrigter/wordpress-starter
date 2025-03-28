@@ -56,7 +56,7 @@ trait HasFields
           'name' => 'cta_title',
           'label' => __('Title', 'theme'),
           'instructions' => !$isOptionsPage
-            ? static::defaultValueInstructions()
+            ? static::defaultInstructions()
             : null,
           'type' => 'text',
           'required' => $isOptionsPage,
@@ -75,7 +75,7 @@ trait HasFields
           'name' => 'cta_text',
           'label' => __('Text', 'theme'),
           'instructions' => !$isOptionsPage
-            ? static::defaultValueInstructions()
+            ? static::defaultInstructions()
             : null,
           'type' => 'wysiwyg',
           'media_upload' => false,
@@ -94,7 +94,7 @@ trait HasFields
       ],
       static::buttonsFields($key, 'cta', [
         'instructions' => !$isOptionsPage
-          ? static::defaultValueInstructions()
+          ? static::defaultInstructions()
           : null,
         'conditional_logic' => [
           [
@@ -121,7 +121,7 @@ trait HasFields
           'name' => "{$prefix}_buttons",
           'label' => __('Buttons', 'theme'),
           'type' => 'repeater',
-          'layout' => 'table',
+          'layout' => 'column',
           'button_label' => __('+ Add button', 'theme'),
           'sub_fields' => [
             [
@@ -152,7 +152,7 @@ trait HasFields
     ];
   }
 
-  private static function defaultValueInstructions()
+  private static function defaultInstructions()
   {
     $url = GeneralContent::adminUrl();
     $title = GeneralContent::title();
