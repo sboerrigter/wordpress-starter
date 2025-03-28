@@ -21,8 +21,8 @@ class Security
     add_filter('the_generator', '__return_empty_string');
   }
 
-  // Return Rest API error if user is not logged in
-  static function rest_errors(array $errors)
+  // Deny access to Rest API if user is not logged in
+  static function rest_errors($errors)
   {
     if (!is_user_logged_in()) {
       return new WP_Error('access_denied', 'Rest API is disabled', [
