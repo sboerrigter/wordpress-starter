@@ -3,7 +3,6 @@
   "version": 2,
   "settings": {
     "appearanceTools": false,
-    "border": {},
     "color": {
       "defaultPalette": false,
       "palette": [
@@ -69,15 +68,10 @@
         }
       ]
     },
-    "custom": {},
-    "dimensions": {},
     "layout": {
       "contentSize": "720px",
       "wideSize": "1200px"
     },
-    "position": {},
-    "shadow": {},
-    "spacing": {},
     "typography": {
       "customFontSize": false,
       "dropCap": false,
@@ -89,7 +83,6 @@
       "textTransform": false,
       "writingMode": false
     },
-    "useRootPaddingAwareAlignments": false,
     "blocks": {
       "core/paragraph": {
         "typography": {
@@ -116,6 +109,16 @@
             }
           ]
         }
+      }
+    }
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "top": "0",
+        "bottom": "0",
+        "left": "1.25rem",
+        "right": "1.25rem"
       }
     }
   }
