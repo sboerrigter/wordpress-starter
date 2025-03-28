@@ -6,8 +6,13 @@ class Menu
 {
   public static function init()
   {
-    register_nav_menu('main', __('Main menu', 'theme'));
-    register_nav_menu('footer', __('Footer menu', 'theme'));
+    add_action('after_setup_theme', [static::class, 'register']);
+  }
+
+  public static function register()
+  {
+    register_nav_menu('main', __('Main menu'));
+    register_nav_menu('footer', __('Footer menu'));
   }
 
   // Get menu items by nav menu location
