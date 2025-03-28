@@ -3,10 +3,12 @@ const toggle = document.querySelector('.menu-toggle');
 const items = document.querySelectorAll('.menu-item');
 
 // Toggle menu
-toggle.addEventListener('click', () => {
-  menu.classList.toggle('menu-open');
-  toggle.classList.toggle('menu-toggle-open');
-});
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('menu-open');
+    toggle.classList.toggle('menu-toggle-open');
+  });
+}
 
 // Toggle submenu items
 items.forEach((item) => {

@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "duotone": null,
+      "palette": [
+        {
+          "slug": "blue-100",
+          "name": "Blue 100",
+          "color": "#DBECFF"
+        },
+        {
+          "slug": "blue-600",
+          "name": "Blue 600",
+          "color": "#165DFD"
+        },
+        {
+          "slug": "blue-800",
+          "name": "Blue 800",
+          "color": "#165DFD"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1100px"
+    }
+  }
+}
