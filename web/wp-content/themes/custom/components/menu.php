@@ -7,7 +7,7 @@
   max-lg:absolute top-0 left-0
   max-lg:opacity-0 max-lg:transition-opacity max-lg:-translate-y-full max-lg:pointer-events-none
 
-  lg:flex-row lg:py-4
+  lg:flex-row
 ">
   <?php foreach (Theme\Menu::items('main') as $item) { ?>
     <?= component('menu-item', ['item' => $item]) ?>

@@ -14,6 +14,7 @@
           : 'p-1 lg:px-4 lg:w-full' ?>
       "
       href="<?= $item->url ?>"
+      target="<?= $item->target ?>"
     >
       <?= $item->title ?>
 
