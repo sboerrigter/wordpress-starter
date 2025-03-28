@@ -57,23 +57,23 @@ Ensure you have the following installed on your system:
    cp .env.example .env
    ```
 
-3. Run `npm start` to install Composer and NPM dependencies and run vite:
-
-   ```bash
-   npm start
-   ```
-
 ## Usage
 
-- Run the development server:
+- Run `npm start` to install Composer and NPM dependencies and run vite development server:
 
   ```bash
   npm start
   ```
 
 - Build for production:
+
   ```bash
   npm run build
+  ```
+
+- Format code with Prettier:
+  ```bash
+  npm run format
   ```
 
 ## License
