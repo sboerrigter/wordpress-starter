@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Custom theme\n"
-"POT-Creation-Date: 2025-03-28 11:32+0100\n"
-"PO-Revision-Date: 2025-03-28 11:34+0100\n"
+"POT-Creation-Date: 2025-03-28 14:03+0100\n"
+"PO-Revision-Date: 2025-03-28 14:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -28,114 +28,119 @@ msgstr "Hoofdmenu"
 msgid "Footer menu"
 msgstr "Footer menu"
 
-#: src/Plugins/Acf/GeneralContent.php:15
+#: src/Plugins/Acf/GeneralContent.php:20
 msgid "General content"
 msgstr "Algemene inhoud"
 
+#: src/Plugins/Acf/GeneralContent.php:32
+msgid "General"
+msgstr "Algemeen"
+
 #: src/PostTypes/Page.php:17
 msgid "Pages"
-msgstr ""
+msgstr "Pagina’s"
 
 #: src/PostTypes/Page.php:18
 msgid "Page"
-msgstr ""
+msgstr "Pagina"
 
 #: src/PostTypes/Page.php:31 src/PostTypes/Post.php:31
 msgid "settings"
-msgstr ""
+msgstr "instellingen"
 
 #: src/PostTypes/Post.php:17
 msgid "Posts"
-msgstr ""
+msgstr "Berichten"
 
 #: src/PostTypes/Post.php:18
 msgid "Post"
-msgstr ""
+msgstr "Bericht"
 
-#: src/Traits/HasFields.php:13
+#: src/Traits/HasFields.php:15
 msgid "Header"
-msgstr ""
+msgstr "Header"
 
-#: src/Traits/HasFields.php:20
+#: src/Traits/HasFields.php:22
 msgid "Image"
-msgstr ""
+msgstr "Afbeelding"
 
-#: src/Traits/HasFields.php:36
+#: src/Traits/HasFields.php:38
 msgid "Call to action"
-msgstr ""
-
-#: src/Traits/HasFields.php:44
-msgid "Show component"
-msgstr ""
+msgstr "Call to action"
 
 #: src/Traits/HasFields.php:46
+msgid "Show component"
+msgstr "Component weergeven"
+
+#: src/Traits/HasFields.php:48
 msgid "Show \"Call to action\" component on this page"
-msgstr ""
+msgstr "“Call to action” component weergeven op deze pagina"
 
-#: src/Traits/HasFields.php:55
+#: src/Traits/HasFields.php:57
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
-#: src/Traits/HasFields.php:74
+#: src/Traits/HasFields.php:76
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
-#: src/Traits/HasFields.php:120
+#: src/Traits/HasFields.php:122
 msgid "Buttons"
-msgstr ""
+msgstr "Knoppen"
 
-#: src/Traits/HasFields.php:123
+#: src/Traits/HasFields.php:125
 msgid "+ Add button"
-msgstr ""
+msgstr "+ Knop toevoegen"
 
-#: src/Traits/HasFields.php:128
+#: src/Traits/HasFields.php:130
 msgid "Button"
-msgstr ""
+msgstr "Knop"
 
-#: src/Traits/HasFields.php:135
+#: src/Traits/HasFields.php:137
 msgid "Style"
-msgstr ""
-
-#: src/Traits/HasFields.php:138
-msgid "Blue"
-msgstr ""
-
-#: src/Traits/HasFields.php:139
-msgid "Blue outline"
-msgstr ""
+msgstr "Stijl"
 
 #: src/Traits/HasFields.php:140
-msgid "Gray"
-msgstr ""
+msgid "Blue"
+msgstr "Blauw"
 
 #: src/Traits/HasFields.php:141
-msgid "Gray outline"
-msgstr ""
+msgid "Blue outline"
+msgstr "Blauw omlijnd"
 
-#: src/Traits/HasFields.php:156
-msgid ""
-"Overwrites the default value in <a href=\"admin.php?page=general-content\" "
-"target=\"_blank\">General content</a> settings."
-msgstr ""
+#: src/Traits/HasFields.php:142
+msgid "Gray"
+msgstr "Grijs"
+
+#: src/Traits/HasFields.php:143
+msgid "Gray outline"
+msgstr "Grijs omlijnd"
+
+#: src/Traits/HasFields.php:161
+#, php-format
+msgid "Overwrites the default value in %s settings."
+msgstr "Overschrijft de standaard waarde in %s instellingen."
 
 #. Theme Name of the plugin/theme
 msgid "Custom theme"
-msgstr ""
+msgstr "Custom thema"
 
 #. Theme URI of the plugin/theme
 msgid "https://github.com/sboerrigter/wordpress-starter"
-msgstr ""
+msgstr "https://github.com/sboerrigter/wordpress-starter"
 
 #. Description of the plugin/theme
 msgid ""
 "Custom WordPress theme, built with <a href=\"https://github.com/sboerrigter/"
 "wordpress-starter\">WordPress starter</a>."
 msgstr ""
+"Maatwerk WordPress theme, gemaakt met <a href=“https://github.com/"
+"sboerrigter/wordpress-starter”>WordPress starter</a>."
 
 #. Author of the plugin/theme
 msgid "Sjoerd Boerrigter"
-msgstr ""
+msgstr "Sjoerd Boerrigter"
 
 #. Author URI of the plugin/theme
 msgid "https://www.bonsjoerd.eu"
-msgstr ""
+msgstr "https://www.bonsjoerd.eu"
