@@ -14,8 +14,8 @@ class Post
   public static function init()
   {
     static::$labels = [
-      'name' => __('Posts', 'starter'),
-      'singular_name' => __('Post', 'starter'),
+      'name' => __('Posts', 'theme'),
+      'singular_name' => __('Post', 'theme'),
     ];
 
     add_action('acf/init', [static::class, 'registerFields']);
@@ -28,8 +28,9 @@ class Post
     acf_add_local_field_group([
       'key' => "{$key}_settings",
       'title' =>
-        static::$labels['singular_name'] . ' ' . __('settings', 'starter'),
+        static::$labels['singular_name'] . ' ' . __('settings', 'theme'),
       'fields' => array_merge(static::headerFields($key)),
+      'instruction_placement' => 'field',
       'location' => [
         [
           [

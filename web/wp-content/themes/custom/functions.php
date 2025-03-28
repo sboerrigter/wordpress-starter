@@ -15,6 +15,7 @@ Image::init();
 Media::init();
 Menu::init();
 Security::init();
+Translation::init();
 WordPress::init();
 
 Plugins\Acf\GeneralContent::init();

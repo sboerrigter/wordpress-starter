@@ -1,4 +1,4 @@
-<?php if (!isset($buttons)) {
+<?php if (empty($buttons)) {
   return;
 } ?>
 
