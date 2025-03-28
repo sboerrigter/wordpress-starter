@@ -56,7 +56,7 @@ trait HasFields
           'name' => 'cta_title',
           'label' => __('Title', 'theme'),
           'instructions' => !$isOptionsPage
-            ? static::defaultInstructions()
+            ? static::defaultValueInstructions()
             : null,
           'type' => 'text',
           'required' => $isOptionsPage,
@@ -75,7 +75,7 @@ trait HasFields
           'name' => 'cta_text',
           'label' => __('Text', 'theme'),
           'instructions' => !$isOptionsPage
-            ? static::defaultInstructions()
+            ? static::defaultValueInstructions()
             : null,
           'type' => 'wysiwyg',
           'media_upload' => false,
@@ -94,7 +94,7 @@ trait HasFields
       ],
       static::buttonsFields($key, 'cta', [
         'instructions' => !$isOptionsPage
-          ? static::defaultInstructions()
+          ? static::defaultValueInstructions()
           : null,
         'conditional_logic' => [
           [
@@ -152,7 +152,7 @@ trait HasFields
     ];
   }
 
-  private static function defaultInstructions()
+  private static function defaultValueInstructions()
   {
     $url = GeneralContent::adminUrl();
     $title = GeneralContent::title();
