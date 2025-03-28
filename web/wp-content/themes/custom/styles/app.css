@@ -4,22 +4,22 @@
   --breakpoint-2xs: 375px;
   --breakpoint-xs: 480px;
 
-  --color-brand-50: var(--color-blue-50);
-  --color-brand-100: var(--color-blue-100);
-  --color-brand-200: var(--color-blue-200);
-  --color-brand-300: var(--color-blue-300);
-  --color-brand-400: var(--color-blue-400);
-  --color-brand-500: var(--color-blue-500);
-  --color-brand-600: var(--color-blue-600);
-  --color-brand-700: var(--color-blue-700);
-  --color-brand-800: var(--color-blue-800);
-  --color-brand-900: var(--color-blue-900);
-  --color-brand-950: var(--color-blue-950);
+  --color-primary-50: var(--color-blue-50);
+  --color-primary-100: var(--color-blue-100);
+  --color-primary-200: var(--color-blue-200);
+  --color-primary-300: var(--color-blue-300);
+  --color-primary-400: var(--color-blue-400);
+  --color-primary-500: var(--color-blue-500);
+  --color-primary-600: var(--color-blue-600);
+  --color-primary-700: var(--color-blue-700);
+  --color-primary-800: var(--color-blue-800);
+  --color-primary-900: var(--color-blue-900);
+  --color-primary-950: var(--color-blue-950);
 }
 
 @layer base {
   * {
-    @apply accent-brand-600;
+    @apply accent-primary-600;
     @apply border-gray-200;
   }
 
@@ -60,7 +60,7 @@
   ol,
   ul {
     @apply list-inside list-disc text-gray-600 mb-6;
-    @apply marker:text-brand-600 marker:font-semibold;
+    @apply marker:text-primary-600 marker:font-semibold;
 
     ol,
     ul {
@@ -77,7 +77,7 @@
   }
 
   a {
-    @apply text-brand-600 hover:text-brand-800;
+    @apply text-primary-600 hover:text-primary-800;
     @apply underline underline-offset-2 font-semibold;
     @apply transition-colors;
   }
@@ -91,11 +91,37 @@
   }
 
   ::selection {
-    @apply bg-brand-600 text-white;
+    @apply bg-primary-600 text-white;
   }
 }
 
 @layer components {
+  .button {
+    @apply inline-flex gap-1 px-4 py-2 border-2 rounded;
+    @apply font-semibold no-underline;
+    @apply bg-primary-600 border-primary-600 text-white;
+    @apply hover:bg-primary-800 hover:border-primary-800 hover:text-white;
+  }
+
+  .button-blue-outline {
+    @apply bg-transparent border-primary-600 text-primary-600;
+    @apply hover:bg-primary-800 hover:border-primary-800;
+  }
+
+  .button-gray {
+    @apply bg-gray-600 border-gray-600 text-white;
+    @apply hover:bg-gray-800 hover:border-gray-800;
+  }
+
+  .button-gray-outline {
+    @apply bg-transparent border-gray-600 text-gray-600;
+    @apply hover:bg-gray-800 hover:border-gray-800;
+  }
+
+  .button-chevron-right {
+    @apply group-hover:translate-x-1 transition-transform;
+  }
+
   .menu-open {
     @apply !opacity-100 !translate-y-0 !flex !pointer-events-auto;
   }

@@ -1,8 +1,12 @@
 <?php
 namespace Theme\Plugins\Acf;
 
+use Theme\Traits\HasFields;
+
 class GeneralContent
 {
+  use HasFields;
+
   private static $name = 'general-content';
   private static $title;
 
@@ -31,36 +35,7 @@ class GeneralContent
     acf_add_local_field_group([
       'key' => static::$name,
       'title' => static::$title,
-      'fields' => [
-        [
-          'key' => "field_{$key}_tab_cta",
-          'name' => 'tab_cta',
-          'label' => __('Call to action', 'starter'),
-          'type' => 'tab',
-          'placement' => 'left',
-        ],
-        [
-          'key' => "field_{$key}_cta_title",
-          'name' => 'cta_title',
-          'label' => __('Call to action title', 'starter'),
-          'type' => 'text',
-        ],
-        [
-          'key' => "field_{$key}_cta_text",
-          'name' => 'cta_text',
-          'label' => __('Call to action text', 'starter'),
-          'type' => 'wysiwyg',
-          'media_upload' => false,
-          'tabs' => 'visual',
-          'toolbar' => 'basic',
-        ],
-        [
-          'key' => "field_{$key}_cta_button",
-          'name' => 'cta_button',
-          'label' => __('Call to action button', 'starter'),
-          'type' => 'link',
-        ],
-      ],
+      'fields' => array_merge(static::ctaFields($key)),
       'location' => [
         [
           [

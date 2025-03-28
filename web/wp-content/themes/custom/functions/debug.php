@@ -1,26 +1,23 @@
 <?php
 // Dump a variable and die
 if (!function_exists('debug')) {
-  function debug($vars)
+  function debug($var)
   {
-    if (!is_array($vars)) {
-      $vars = [$vars];
-    } ?>
+    ?>
     <div class="
       fixed left-0 top-0
       flex flex-col gap-5
       w-screen h-screen px-5 py-10
-      bg-gray-900/75
+      bg-gray-900/50
       overflow-y-auto z-50
     ">
-
-      <?php foreach ($vars as $var) { ?>
         <pre class="
           bg-gray-800 rounded-md
           text-white text-base
           w-full max-w-screen-md p-5 mx-auto
-        "><?php var_dump($var); ?></pre>
-        <?php } ?>
+        ">
+        <?php var_dump($var); ?>
+      </pre>
     </div>
     <?php
   }

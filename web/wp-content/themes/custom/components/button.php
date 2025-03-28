@@ -1,4 +1,4 @@
-<a class="button <?= $class ?? '' ?>"
+<a class="button group <?= $class ?? '' ?>"
     <?php
     if (!empty($url)) {
       echo 'href="' . $url . '" ';
@@ -6,10 +6,16 @@
     if (!empty($target)) {
       echo 'target="' . $target . '" ';
     }
+
     if (!empty($target) && $target === '_blank') {
       echo 'rel="nofollow" ';
     }
     ?>
 >
-    <?= $title ?>
+  <?= $iconBefore ?? null ?>
+  <?= $title ?>
+  <?= $iconAfter ??
+    component('svg/chevron-right', [
+      'class' => 'button-chevron-right',
+    ]) ?>
 </a>

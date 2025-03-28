@@ -29,7 +29,10 @@ class Page
       'key' => "{$key}_settings",
       'title' =>
         static::$labels['singular_name'] . ' ' . __('settings', 'starter'),
-      'fields' => array_merge(static::headerFields($key)),
+      'fields' => array_merge(
+        static::headerFields($key),
+        static::ctaFields($key)
+      ),
       'location' => [
         [
           [
