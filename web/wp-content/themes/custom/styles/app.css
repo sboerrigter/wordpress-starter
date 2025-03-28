@@ -38,19 +38,19 @@
   }
 
   h1 {
-    @apply text-3xl/snug mb-6;
+    @apply text-3xl/snug mb-4;
     @apply xs:text-4xl/tight xs:mb-8;
     @apply md:text-5xl/tight md:mb-10;
   }
 
   h2 {
-    @apply text-2xl/normal mb-4;
-    @apply md:text-3xl/snug md:mb-6;
+    @apply text-2xl/normal mb-3;
+    @apply md:text-3xl/snug md:mb-4;
   }
 
   h3 {
-    @apply text-xl mb-3;
-    @apply md:text-2xl/normal md:mb-4;
+    @apply text-xl mb-2;
+    @apply md:text-2xl/normal md:mb-3;
   }
 
   p {
