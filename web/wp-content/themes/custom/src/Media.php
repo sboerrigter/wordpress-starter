@@ -10,11 +10,10 @@ class Media
   {
     add_action('after_setup_theme', [static::class, 'imageSizes']);
     add_action('after_setup_theme', [static::class, 'imageDefaultLinkType']);
-
     add_filter('template_redirect', [static::class, 'redirect']);
     add_filter('redirect_canonical', [static::class, 'canonical'], 0, 1);
-    add_filter('attachment_link', [static::class, 'disable_link'], 10, 2);
-    add_filter('wp_unique_post_slug', [static::class, 'modify_slug'], 10, 4);
+    add_filter('attachment_link', [static::class, 'disableLink'], 10, 2);
+    add_filter('wp_unique_post_slug', [static::class, 'modifySlug'], 10, 4);
   }
 
   // Set image sizes
@@ -52,7 +51,7 @@ class Media
   }
 
   // Disable attachment links
-  public static function disable_link(string $url, int $id)
+  public static function disableLink(string $url, int $id)
   {
     if ($attachment_url = wp_get_attachment_url($id)) {
       return $attachment_url;
@@ -62,7 +61,7 @@ class Media
   }
 
   // Randomize attachment slugs using UUIDs to avoid slug reservation
-  public static function modify_slug(
+  public static function modifySlug(
     string $slug,
     string $id,
     string $status,
