@@ -57,6 +57,12 @@ Ensure you have the following installed on your system:
    cp .env.example .env
    ```
 
+3. Copy `auth.json.example` to `auth.json` and enter you Advanced Custom Fields Pro lisence key in the "username" field and your website\'s domain in the "password" field.
+
+   ```bash
+   cp auth.json.example auth.json
+   ```
+
 ## Usage
 
 - Run `npm start` to install Composer and NPM dependencies and run vite development server:

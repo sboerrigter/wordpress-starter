@@ -1,0 +1,8 @@
+{
+  "http-basic": {
+    "connect.advancedcustomfields.com": {
+      "username": "your_license_key",
+      "password": "http://www.wordpress-starter.test"
+    }
+  }
+}
