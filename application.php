@@ -59,12 +59,15 @@ Config::define('DB_CHARSET', 'utf8mb4');
 Config::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
-// Debuggingg
+// Debugging
 Config::define('WP_DEBUG', env('WP_DEBUG') ?? false);
 Config::define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY') ?? false);
 Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?? false);
 Config::define('SCRIPT_DEBUG', env('SCRIPT_DEBUG') ?? false);
 ini_set('display_errors', '0');
+
+// Theme
+Config::define('PRODUCTION_URL', env('PRODUCTION_URL'));
 
 // Authentication
 Config::define('AUTH_KEY', env('AUTH_KEY'));

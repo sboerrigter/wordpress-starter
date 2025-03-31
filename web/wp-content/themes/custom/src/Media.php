@@ -10,6 +10,11 @@ class Media
   {
     add_action('after_setup_theme', [static::class, 'imageSizes']);
     add_action('after_setup_theme', [static::class, 'imageDefaultLinkType']);
+    add_filter('wp_get_attachment_image_src', [
+      static::class,
+      'replaceImageSrc',
+    ]);
+    add_filter('the_content', [static::class, 'replaceImageUrls']);
     add_filter('template_redirect', [static::class, 'redirect']);
     add_filter('redirect_canonical', [static::class, 'canonical'], 0, 1);
     add_filter('attachment_link', [static::class, 'disableLink'], 10, 2);
@@ -31,6 +36,60 @@ class Media
   public static function imageDefaultLinkType()
   {
     update_option('image_default_link_type', 'none');
+  }
+
+  // Replace image URL in wp_get_attachment_image_src hook with production image URL of the image doesn't exist locally
+  public static function replaceImageSrc($src)
+  {
+    // Bail if this is the production environment
+    if (WP_ENV == 'production') {
+      return $src;
+    }
+
+    // Bail if this is not an array
+    if (!is_array($src)) {
+      return $src;
+    }
+
+    // Get image HTTP status code
+    $status = wp_remote_retrieve_response_code(wp_remote_get($src[0]));
+
+    // Replace the image URL if it doesn't exist locally
+    if ($status !== 200) {
+      $src[0] = static::replaceImageUrls($src[0]);
+    }
+
+    return $src;
+  }
+
+  // Replace all image URL's with producion image URL's in the provided content
+  public static function replaceImageUrls($content)
+  {
+    // Bail if this is the production environment
+    if (WP_ENV == 'production') {
+      return $content;
+    }
+
+    // Bail if PRODUCTION_URL is not defined
+    if (!defined('PRODUCTION_URL')) {
+      return $content;
+    }
+
+    // Bail if this is not a string
+    if (!is_string($content)) {
+      return $content;
+    }
+
+    $home = home_url();
+    $production = PRODUCTION_URL;
+
+    $content = str_replace(
+      "{$home}/wp-content/uploads/",
+      "{$production}/wp-content/uploads/",
+      $content
+    );
+
+    return $content;
   }
 
   // Redirect attachment pages to the attachment files
