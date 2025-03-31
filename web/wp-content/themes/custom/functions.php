@@ -14,6 +14,7 @@ Editor::init();
 Image::init();
 Media::init();
 Menu::init();
+Oembed::init();
 Security::init();
 Translation::init();
 WordPress::init();
