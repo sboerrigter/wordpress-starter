@@ -8,8 +8,8 @@ class Media
 {
   public static function init()
   {
-    add_action('after_setup_theme', [static::class, 'image_sizes']);
-    add_action('after_setup_theme', [static::class, 'image_default_link_type']);
+    add_action('after_setup_theme', [static::class, 'imageSizes']);
+    add_action('after_setup_theme', [static::class, 'imageDefaultLinkType']);
 
     add_filter('template_redirect', [static::class, 'redirect']);
     add_filter('redirect_canonical', [static::class, 'canonical'], 0, 1);
@@ -18,7 +18,7 @@ class Media
   }
 
   // Set image sizes
-  public static function image_sizes()
+  public static function imageSizes()
   {
     update_option('thumbnail_size_w', 180);
     update_option('thumbnail_size_h', 180);
@@ -29,7 +29,7 @@ class Media
   }
 
   // Don't add links to images by default
-  public static function image_default_link_type()
+  public static function imageDefaultLinkType()
   {
     update_option('image_default_link_type', 'none');
   }

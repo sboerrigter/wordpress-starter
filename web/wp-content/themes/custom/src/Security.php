@@ -13,8 +13,8 @@ class Security
     add_filter('xmlrpc_methods', '__return_false');
 
     // Disable REST API
-    add_filter('rest_authentication_errors', [static::class, 'rest_errors']);
-    add_filter('rest_endpoints', [static::class, 'disable_rest_endpoints']);
+    add_filter('rest_authentication_errors', [static::class, 'restErrors']);
+    add_filter('rest_endpoints', [static::class, 'disableRestEndpoints']);
 
     // Hide WordPress version
     remove_action('wp_head', 'wp_generator');
@@ -22,7 +22,7 @@ class Security
   }
 
   // Deny access to Rest API if user is not logged in
-  static function rest_errors($errors)
+  static function restErrors($errors)
   {
     if (!is_user_logged_in()) {
       return new WP_Error('access_denied', 'Rest API is disabled', [
@@ -33,7 +33,7 @@ class Security
     return $errors;
   }
 
-  static function disable_rest_endpoints(array $endpoints)
+  static function disableRestEndpoints(array $endpoints)
   {
     if (!is_user_logged_in()) {
       if (isset($endpoints['/wp/v2/users'])) {

@@ -8,16 +8,16 @@ final class Admin
 {
   public static function init()
   {
-    add_action('admin_menu', [static::class, 'admin_menu']);
+    add_action('admin_menu', [static::class, 'adminMenu']);
     add_filter('custom_menu_order', '__return_true');
-    add_action('menu_order', [static::class, 'menu_order']);
-    add_action('admin_bar_menu', [static::class, 'admin_bar']);
-    add_action('admin_head', [static::class, 'admin_notices']);
-    add_action('wp_dashboard_setup', [static::class, 'dashboard_widgets']);
+    add_action('menu_order', [static::class, 'menuOrder']);
+    add_action('admin_bar_menu', [static::class, 'adminBar']);
+    add_action('admin_head', [static::class, 'adminNotices']);
+    add_action('wp_dashboard_setup', [static::class, 'dashboardWidgets']);
   }
 
   // Add and remove admin menu items
-  public static function admin_menu()
+  public static function adminMenu()
   {
     global $menu;
 
@@ -29,7 +29,7 @@ final class Admin
   }
 
   // Reorder admin menu items and put any items not in this list at the end
-  public static function menu_order(array $order)
+  public static function menuOrder(array $order)
   {
     $newOrder = [
       'index.php', // Dashboard
@@ -65,19 +65,19 @@ final class Admin
   }
 
   // Remove admin bar items
-  public static function admin_bar(WP_Admin_Bar $admin_bar)
+  public static function adminBar(WP_Admin_Bar $admin_bar)
   {
     $admin_bar->remove_menu('comments');
   }
 
   // Hide WordPress update notice
-  public static function admin_notices()
+  public static function adminNotices()
   {
     remove_action('admin_notices', 'update_nag', 3);
   }
 
   // Remove admin dashboard widgets
-  public static function dashboard_widgets()
+  public static function dashboardWidgets()
   {
     // Copy activity widget to 2nd column
     global $wp_meta_boxes;

@@ -24,13 +24,13 @@ class WordPress
     remove_action('template_redirect', 'rest_output_link_header', 11);
 
     // Disable feeds
-    add_action('do_feed', [static::class, 'disable_feeds'], 1);
-    add_action('do_feed_atom', [static::class, 'disable_feeds'], 1);
-    add_action('do_feed_rdf', [static::class, 'disable_feeds'], 1);
-    add_action('do_feed_rss', [static::class, 'disable_feeds'], 1);
-    add_action('do_feed_rss2', [static::class, 'disable_feeds'], 1);
-    add_action('do_feed_atom_comments', [static::class, 'disable_feeds'], 1);
-    add_action('do_feed_rss2_comments', [static::class, 'disable_feeds'], 1);
+    add_action('do_feed', [static::class, 'disableFeeds'], 1);
+    add_action('do_feed_atom', [static::class, 'disableFeeds'], 1);
+    add_action('do_feed_rdf', [static::class, 'disableFeeds'], 1);
+    add_action('do_feed_rss', [static::class, 'disableFeeds'], 1);
+    add_action('do_feed_rss2', [static::class, 'disableFeeds'], 1);
+    add_action('do_feed_atom_comments', [static::class, 'disableFeeds'], 1);
+    add_action('do_feed_rss2_comments', [static::class, 'disableFeeds'], 1);
 
     // Turn off comments
     add_filter('comments_open', '__return_false');
@@ -46,7 +46,7 @@ class WordPress
   }
 
   // Redirects all feeds to home page
-  public static function disable_feeds()
+  public static function disableFeeds()
   {
     wp_redirect(home_url());
     exit();

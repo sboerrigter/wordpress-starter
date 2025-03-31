@@ -11,8 +11,8 @@ class Assets
   {
     add_action('wp_head', [static::class, 'preconnect']);
     add_action('wp_enqueue_scripts', [static::class, 'enqueue']);
-    add_action('enqueue_block_assets', [static::class, 'enqueue_editor']);
-    add_filter('script_loader_tag', [static::class, 'script_loader'], 10, 3);
+    add_action('enqueue_block_assets', [static::class, 'enqueueEditor']);
+    add_filter('script_loader_tag', [static::class, 'scriptLoader'], 10, 3);
   }
 
   // Preconnect to Google fonts
@@ -46,7 +46,7 @@ class Assets
   }
 
   // Enqueue block editor styles
-  public static function enqueue_editor()
+  public static function enqueueEditor()
   {
     wp_enqueue_style('font', static::$fontUrl);
     wp_enqueue_style('app', static::compiled('css'));
@@ -68,7 +68,7 @@ class Assets
   }
 
   // Defer load scripts as modules
-  public static function script_loader(string $tag, string $handle, string $src)
+  public static function scriptLoader(string $tag, string $handle, string $src)
   {
     if (in_array($handle, ['main', 'vite'])) {
       return '<script type="module" src="' .

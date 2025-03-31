@@ -25,7 +25,7 @@ class Image
 
   public static function init()
   {
-    add_action('after_setup_theme', [static::class, 'handle_resize']);
+    add_action('after_setup_theme', [static::class, 'handleResize']);
   }
 
   public function __construct(array $args)
@@ -128,7 +128,7 @@ class Image
   }
 
   // Handle image resizing with Glide
-  public static function handle_resize()
+  public static function handleResize()
   {
     $uri = strtok($_SERVER['REQUEST_URI'], '?');
 
