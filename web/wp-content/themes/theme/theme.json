@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
+  "version": 3,
   "settings": {
     "appearanceTools": false,
     "color": {
@@ -108,6 +108,15 @@
               "size": "1.25rem"
             }
           ]
+        }
+      }
+    }
+  },
+  "styles": {
+    "elements": {
+      "link": {
+        "typography": {
+          "textDecoration": false
         }
       }
     }
