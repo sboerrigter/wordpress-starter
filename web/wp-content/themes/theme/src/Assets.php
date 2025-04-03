@@ -4,13 +4,13 @@ namespace Theme;
 
 class Assets
 {
-  static $scriptPath = 'web/wp-content/themes/theme/scripts/app.js';
+  static $scriptPath = 'web/wp-content/themes/theme/scripts/theme.js';
   static $fontUrl = 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
 
   public static function init()
   {
     add_action('wp_head', [static::class, 'preconnect']);
-    add_action('wp_enqueue_scripts', [static::class, 'enqueue']);
+    add_action('wp_enqueue_scripts', [static::class, 'enqueue'], 10);
     add_action('admin_init', [static::class, 'addEditorStyles']);
     add_filter('script_loader_tag', [static::class, 'scriptLoader'], 10, 3);
   }
@@ -33,14 +33,17 @@ class Assets
     // Enqueue scripts and styles from vite development server or compiled
     if (is_array(wp_remote_get('http://localhost:5173/'))) {
       wp_enqueue_script('vite', 'http://localhost:5173/@vite/client');
-      wp_enqueue_script('main', 'http://localhost:5173/' . static::$scriptPath);
+      wp_enqueue_script(
+        'theme',
+        'http://localhost:5173/' . static::$scriptPath
+      );
     } else {
-      wp_enqueue_script('app', static::compiled('js'));
-      wp_enqueue_style('app', static::compiled('css'));
+      wp_enqueue_script('theme', static::compiled('js'));
+      wp_enqueue_style('theme', static::compiled('css'));
     }
 
     // Pass PHP variables to JavaScript
-    wp_localize_script('app', 'theme', [
+    wp_localize_script('theme', 'theme', [
       'ajaxUrl' => admin_url('admin-ajax.php'),
     ]);
   }
@@ -70,7 +73,7 @@ class Assets
   // Defer load scripts as modules
   public static function scriptLoader(string $tag, string $handle, string $src)
   {
-    if (in_array($handle, ['main', 'vite'])) {
+    if (in_array($handle, ['theme', 'vite'])) {
       return '<script type="module" src="' .
         esc_url($src) .
         '" defer></script>';
