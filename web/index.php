@@ -1,4 +1,6 @@
 <?php
+$uri = $_SERVER['REQUEST_URI'];
+
 // Redirect /wp-admin and /wp-login.php to WordPress
 if (strpos($uri, '/wp-admin') === 0 || strpos($uri, '/wp-login.php') === 0) {
   header("Location: /wp{$uri}");
