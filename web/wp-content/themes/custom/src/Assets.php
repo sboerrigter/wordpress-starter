@@ -11,7 +11,7 @@ class Assets
   {
     add_action('wp_head', [static::class, 'preconnect']);
     add_action('wp_enqueue_scripts', [static::class, 'enqueue']);
-    add_action('enqueue_block_assets', [static::class, 'enqueueEditor']);
+    add_action('admin_init', [static::class, 'addEditorStyles']);
     add_filter('script_loader_tag', [static::class, 'scriptLoader'], 10, 3);
   }
 
@@ -46,10 +46,10 @@ class Assets
   }
 
   // Enqueue block editor styles
-  public static function enqueueEditor()
+  public static function addEditorStyles()
   {
-    wp_enqueue_style('font', static::$fontUrl);
-    wp_enqueue_style('app', static::compiled('css'));
+    add_theme_support('editor-styles');
+    add_editor_style(static::compiled('css'));
   }
 
   // Get URL of compiled CSS or JS
