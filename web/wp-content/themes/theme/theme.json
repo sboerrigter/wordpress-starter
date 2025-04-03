@@ -116,7 +116,7 @@
     "elements": {
       "link": {
         "typography": {
-          "textDecoration": false
+          "textDecoration": null
         }
       }
     }
