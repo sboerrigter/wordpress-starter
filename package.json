@@ -10,7 +10,7 @@
     "tailwindcss": "^4.0.15"
   },
   "scripts": {
-    "start": "vite",
+    "start": "composer install && npm install && vite",
     "build": "vite build",
     "dev": "vite",
     "format": "npx prettier . --write"
