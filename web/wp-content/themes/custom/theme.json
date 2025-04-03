@@ -111,15 +111,5 @@
         }
       }
     }
-  },
-  "styles": {
-    "spacing": {
-      "padding": {
-        "top": "0",
-        "bottom": "0",
-        "left": "1.25rem",
-        "right": "1.25rem"
-      }
-    }
   }
 }
