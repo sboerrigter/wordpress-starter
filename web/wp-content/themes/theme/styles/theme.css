@@ -4,7 +4,7 @@
   --breakpoint-2xs: 375px;
   --breakpoint-xs: 480px;
 
-  --container-content: 740px;
+  --container-content: 760px;
 
   --color-primary-50: var(--color-blue-50);
   --color-primary-100: var(--color-blue-100);
@@ -186,7 +186,6 @@
 }
 
 /* WordPress editor styles */
-.editor-visual-editor__post-title-wrapper,
-.is-root-container {
+.editor-styles-wrapper {
   @apply w-full max-w-content px-5 mx-auto;
 }
