@@ -25,10 +25,7 @@ class Editor
     // add_filter('allowed_block_types_all', [static::class, 'allowedTypes']);
     // add_filter('block_editor_settings_all', [static::class, 'settings']);
     // add_action('init', [static::class, 'theme_support']);
-    // add_action('enqueue_block_editor_assets', [
-    //   static::class,
-    //   'enqueue_scripts',
-    // ]);
+    add_action('enqueue_block_editor_assets', [static::class, 'enqueue']);
   }
 
   // Define allowed block types
@@ -67,14 +64,12 @@ class Editor
   // }
 
   // Enqueue block editor customisations file
-  // public static function enqueue_scripts()
-  // {
-  //   wp_enqueue_script(
-  //     'editor-modifications',
-  //     get_stylesheet_directory_uri() . '/scripts/editor.js',
-  //     ['wp-blocks', 'wp-dom'],
-  //     time(),
-  //     true
-  //   );
-  // }
+  public static function enqueue()
+  {
+    wp_enqueue_script(
+      'theme-editor',
+      get_theme_file_uri('/scripts/editor.js'),
+      ['wp-blocks', 'wp-dom-ready', 'wp-edit-post']
+    );
+  }
 }

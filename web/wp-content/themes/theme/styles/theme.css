@@ -54,7 +54,7 @@
   }
 
   p {
-    @apply text-base/[1.5] mb-6 text-gray-600;
+    @apply text-base/normal mb-6 text-gray-600;
   }
 
   ol,
@@ -84,10 +84,6 @@
 
   strong {
     @apply font-semibold text-gray-800;
-  }
-
-  hr {
-    @apply my-7;
   }
 
   ::selection {
@@ -160,6 +156,10 @@
     .menu-item-children {
       @apply !flex;
     }
+  }
+
+  .wp-block-separator {
+    @apply my-6 !border-t-0 h-0.5 bg-gray-200;
   }
 
   .wrapper {

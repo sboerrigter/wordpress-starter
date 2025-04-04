@@ -75,6 +75,7 @@
     "typography": {
       "customFontSize": false,
       "dropCap": false,
+      "defaultFontSizes": false,
       "fontSizes": [],
       "fontStyle": false,
       "fontWeight": false,
@@ -112,13 +113,5 @@
       }
     }
   },
-  "styles": {
-    "elements": {
-      "link": {
-        "typography": {
-          "textDecoration": null
-        }
-      }
-    }
-  }
+  "styles": null
 }
