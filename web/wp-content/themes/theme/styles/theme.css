@@ -59,7 +59,7 @@
 
   ol,
   ul {
-    @apply list-inside list-disc text-gray-600 mb-6;
+    @apply list-disc text-gray-600 mb-6;
     @apply marker:text-primary-600 marker:font-semibold;
 
     ol,
@@ -159,7 +159,7 @@
   }
 
   .wp-block-separator {
-    @apply my-6 !border-t-0 h-0.5 bg-gray-200;
+    @apply my-6 !border-t-0 h-px bg-gray-200;
   }
 
   .wrapper {
