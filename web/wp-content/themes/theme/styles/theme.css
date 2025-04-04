@@ -172,14 +172,6 @@
 }
 
 @layer utilities {
-  .alignleft {
-    @apply float-left mb-4 ml-8;
-  }
-
-  .alignright {
-    @apply float-right mr-4 ml-8;
-  }
-
   .center {
     @apply flex items-center justify-center;
   }

@@ -52,6 +52,8 @@ class Assets
   public static function addEditorStyles()
   {
     add_theme_support('editor-styles');
+
+    add_editor_style(static::$fontUrl);
     add_editor_style(static::compiled('css'));
   }
 
