@@ -4,6 +4,8 @@
   --breakpoint-2xs: 375px;
   --breakpoint-xs: 480px;
 
+  --container-content: 740px;
+
   --color-primary-50: var(--color-blue-50);
   --color-primary-100: var(--color-blue-100);
   --color-primary-200: var(--color-blue-200);
@@ -59,12 +61,12 @@
 
   ol,
   ul {
-    @apply list-disc text-gray-600 mb-6;
+    @apply list-disc text-gray-600 ml-5 mb-6;
     @apply marker:text-primary-600 marker:font-semibold;
 
     ol,
     ul {
-      @apply ml-6 mb-0;
+      @apply mb-0;
     }
   }
 
@@ -170,7 +172,21 @@
 }
 
 @layer utilities {
+  .alignleft {
+    @apply float-left mb-4 ml-8;
+  }
+
+  .alignright {
+    @apply float-right mr-4 ml-8;
+  }
+
   .center {
     @apply flex items-center justify-center;
   }
+}
+
+/* WordPress editor styles */
+.editor-visual-editor__post-title-wrapper,
+.is-root-container {
+  @apply w-full max-w-content px-5 mx-auto;
 }
