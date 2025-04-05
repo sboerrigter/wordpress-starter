@@ -11,8 +11,8 @@ class Assets
   {
     add_action('wp_head', [static::class, 'preconnect']);
     add_action('wp_enqueue_scripts', [static::class, 'enqueue'], 10);
-    add_action('admin_init', [static::class, 'addEditorStyles']);
     add_filter('script_loader_tag', [static::class, 'scriptLoader'], 10, 3);
+    add_action('after_setup_theme', [static::class, 'addEditorStyles']);
   }
 
   // Preconnect to Google fonts
@@ -48,6 +48,18 @@ class Assets
     ]);
   }
 
+  // Defer load scripts as modules
+  public static function scriptLoader(string $tag, string $handle, string $src)
+  {
+    if (in_array($handle, ['theme', 'vite'])) {
+      return '<script type="module" src="' .
+        esc_url($src) .
+        '" defer></script>';
+    }
+
+    return $tag;
+  }
+
   // Enqueue block editor styles
   public static function addEditorStyles()
   {
@@ -70,17 +82,5 @@ class Assets
     ];
 
     return $urls[$type];
-  }
-
-  // Defer load scripts as modules
-  public static function scriptLoader(string $tag, string $handle, string $src)
-  {
-    if (in_array($handle, ['theme', 'vite'])) {
-      return '<script type="module" src="' .
-        esc_url($src) .
-        '" defer></script>';
-    }
-
-    return $tag;
   }
 }

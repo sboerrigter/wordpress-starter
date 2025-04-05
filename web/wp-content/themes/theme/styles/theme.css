@@ -20,9 +20,10 @@
 }
 
 @layer base {
-  * {
-    @apply accent-primary-600;
-    @apply border-gray-200;
+  body {
+    @apply bg-white text-gray-800;
+    @apply font-sans antialiased leading-normal;
+    @apply accent-primary-600 border-gray-200;
   }
 
   h1,

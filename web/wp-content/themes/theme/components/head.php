@@ -8,5 +8,5 @@
   <?php wp_head(); ?>
   </head>
 
-  <body class="font-[Inter] bg-white text-gray-800 antialiased">
+  <body>
     <?php wp_body_open(); ?>
