@@ -12,6 +12,7 @@
   --breakpoint-xs: 480px;
 
   --container-content: 760px;
+  --container-site: 1240px;
 
   --color-primary-50: var(--color-blue-50);
   --color-primary-100: var(--color-blue-100);

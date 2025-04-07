@@ -1,29 +1,9 @@
-.button {
-  @apply inline-flex gap-1 px-4 py-2 border-2 rounded;
-  @apply font-semibold no-underline;
-  @apply bg-primary-600 border-primary-600 text-white;
-  @apply hover:bg-primary-800 hover:border-primary-800 hover:text-white;
+/* WordPress editor styles */
+.editor-styles-wrapper {
+  @apply wrapper max-w-content;
 }
 
-.button-blue-outline {
-  @apply bg-transparent border-primary-600 text-primary-600;
-  @apply hover:bg-primary-800 hover:border-primary-800;
-}
-
-.button-gray {
-  @apply bg-gray-600 border-gray-600 text-white;
-  @apply hover:bg-gray-800 hover:border-gray-800;
-}
-
-.button-gray-outline {
-  @apply bg-transparent border-gray-600 text-gray-600;
-  @apply hover:bg-gray-800 hover:border-gray-800;
-}
-
-.button-chevron-right {
-  @apply group-hover:translate-x-1 transition-transform;
-}
-
+/* Menu */
 .menu-open {
   @apply !opacity-100 !translate-y-0 !flex !pointer-events-auto;
 }
@@ -60,6 +40,35 @@
   }
 }
 
+/* Columns block */
+.wp-block-columns {
+  @apply my-9 gap-9;
+}
+
+.wp-block-column > * {
+  @apply last:mb-0;
+}
+
+/* Block: buttons */
+.wp-block-buttons {
+  @apply gap-3;
+  @apply my-9;
+}
+
+.wp-block-button__link {
+  @apply button;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  @apply button-outline;
+}
+
+/* Block: image */
+.wp-block-image {
+  @apply my-9;
+}
+
+/* Block: separator */
 .wp-block-separator {
-  @apply my-6 !border-t-0 h-px bg-gray-200;
+  @apply my-9 border-t-0 h-px bg-gray-200;
 }
