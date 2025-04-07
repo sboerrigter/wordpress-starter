@@ -1,0 +1,76 @@
+body {
+  @apply bg-white text-gray-800;
+  @apply font-[Inter] antialiased leading-normal;
+  @apply accent-primary-600 border-gray-200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-extrabold leading-normal;
+  @apply text-lg/normal mb-2;
+
+  strong {
+    @apply font-extrabold;
+  }
+}
+
+h1 {
+  @apply text-3xl/snug mb-4;
+  @apply xs:text-4xl/tight xs:mb-8;
+  @apply md:text-5xl/tight md:mb-10;
+}
+
+h2 {
+  @apply text-2xl/normal mb-3;
+  @apply md:text-3xl/snug md:mb-4;
+}
+
+h3 {
+  @apply text-xl mb-2;
+  @apply md:text-2xl/normal md:mb-3;
+}
+
+p {
+  @apply text-base/normal mb-6 text-gray-600;
+}
+
+ol,
+ul {
+  @apply list-disc text-gray-600 ml-5 mb-6;
+  @apply marker:text-primary-600 marker:font-semibold;
+
+  ol,
+  ul {
+    @apply mb-0;
+  }
+}
+
+ol {
+  @apply list-decimal;
+}
+
+li {
+  @apply my-1;
+}
+
+a {
+  @apply text-primary-600 hover:text-primary-800;
+  @apply underline underline-offset-2 font-semibold;
+  @apply transition-colors;
+}
+
+strong {
+  @apply font-semibold text-gray-800;
+}
+
+::selection {
+  @apply bg-primary-600 text-white;
+}
+
+iframe {
+  @apply w-full aspect-video;
+}

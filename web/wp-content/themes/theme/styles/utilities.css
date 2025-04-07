@@ -1,0 +1,14 @@
+.center {
+  @apply flex items-center justify-center;
+}
+
+.wrapper {
+  @apply mx-auto;
+  @apply px-5;
+  @apply w-full max-w-[1240px];
+}
+
+/* WordPress editor styles */
+.editor-styles-wrapper {
+  @apply w-full max-w-content px-5 mx-auto;
+}
