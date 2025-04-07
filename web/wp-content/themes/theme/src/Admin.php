@@ -14,6 +14,7 @@ final class Admin
     add_action('admin_bar_menu', [static::class, 'adminBar']);
     add_action('admin_head', [static::class, 'adminNotices']);
     add_action('wp_dashboard_setup', [static::class, 'dashboardWidgets']);
+    add_filter('dashboard_glance_items', [static::class, 'setGlanceItems']);
   }
 
   // Add and remove admin menu items
@@ -79,19 +80,40 @@ final class Admin
   // Remove admin dashboard widgets
   public static function dashboardWidgets()
   {
-    // Copy activity widget to 2nd column
-    global $wp_meta_boxes;
-    $activity =
-      $wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity'];
-    $wp_meta_boxes['dashboard']['side']['core'] = [$activity];
-
     // remove_meta_box('dashboard_right_now', 'dashboard', 'normal'); // At a Glance
-    remove_meta_box('dashboard_activity', 'dashboard', 'normal'); // Activity
+    // remove_meta_box('dashboard_activity', 'dashboard', 'normal'); // Activity
     remove_meta_box('dashboard_site_health', 'dashboard', 'normal'); // Site Health Status
     remove_meta_box('dashboard_primary', 'dashboard', 'side'); // WordPress Events and News
     remove_meta_box('dashboard_quick_press', 'dashboard', 'side'); // Quick Draft
 
     remove_meta_box('rank_math_dashboard_widget', 'dashboard', 'normal'); // Rank Math Overview
     remove_meta_box('wp_mail_smtp_reports_widget_lite', 'dashboard', 'normal'); // WP Mail SMTP
+  }
+
+  // Add public custom post types to the "At a Glance" dashboard widget
+  public static function setGlanceItems($items = [])
+  {
+    $postTypes = get_post_types(
+      [
+        'public' => true,
+        '_builtin' => false,
+      ],
+      'objects'
+    );
+
+    foreach ($postTypes as $postType) {
+      $pluralLabel = strtolower($postType->labels->name);
+      $count = wp_count_posts($postType->name);
+      $count = intval($count->publish);
+      $count = number_format_i18n($count);
+
+      if (current_user_can($postType->cap->edit_posts)) {
+        $items[] = "<div class='post-count'><a href='edit.php?post_type={$postType->name}'>$count $pluralLabel</a></div>";
+      } else {
+        $items[] = "<div class='post-count'>$count $pluralLabel</div>";
+      }
+    }
+
+    return $items;
   }
 }
