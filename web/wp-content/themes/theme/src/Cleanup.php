@@ -2,7 +2,7 @@
 
 namespace Theme;
 
-class WordPress
+class Cleanup
 {
   public static function init()
   {
@@ -13,6 +13,7 @@ class WordPress
     remove_action('wp_head', 'rest_output_link_wp_head', 10);
     remove_action('wp_head', 'rsd_link');
     remove_action('wp_head', 'wlwmanifest_link');
+    remove_action('wp_head', 'wp_generator');
     remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
     remove_action('wp_head', 'wp_oembed_add_host_js');
     remove_action('wp_head', 'wp_resource_hints', 2);
@@ -32,8 +33,9 @@ class WordPress
     add_action('do_feed_atom_comments', [static::class, 'disableFeeds'], 1);
     add_action('do_feed_rss2_comments', [static::class, 'disableFeeds'], 1);
 
-    // Turn off comments
+    // Turn off comments and pings
     add_filter('comments_open', '__return_false');
+    add_filter('pings_open', '__return_false');
 
     // Remove emojis
     remove_action('wp_head', 'print_emoji_detection_script', 7);

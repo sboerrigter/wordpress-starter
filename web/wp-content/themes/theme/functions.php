@@ -9,6 +9,7 @@ require_once 'functions/debug.php';
 // Initialize classes
 Admin::init();
 Assets::init();
+Cleanup::init();
 Content::init();
 Editor::init();
 Image::init();
@@ -17,7 +18,6 @@ Menu::init();
 Oembed::init();
 Security::init();
 Translation::init();
-WordPress::init();
 
 Plugins\Acf\GeneralContent::init();
 
