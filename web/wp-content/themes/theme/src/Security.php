@@ -17,7 +17,6 @@ class Security
     add_filter('rest_endpoints', [static::class, 'disableRestEndpoints']);
 
     // Hide WordPress version
-    remove_action('wp_head', 'wp_generator');
     add_filter('the_generator', '__return_empty_string');
   }
 
