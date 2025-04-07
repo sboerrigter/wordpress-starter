@@ -1,4 +1,4 @@
-# WordPress starter
+# Start
 
 WordPress starter project for custom theme development with Composer, Glide, Vite, Tailwind CSS, Prettier, Deployer, Gutenberg, Advanced Custom Fields and other tools I like.
 
@@ -47,7 +47,7 @@ Ensure you have the following installed on your system:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sboerrigter/wordpress-starter.git your-project
+   git clone https://github.com/sboerrigter/start.git your-project
    cd your-project
    ```
 

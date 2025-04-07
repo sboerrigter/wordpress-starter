@@ -1,9 +1,9 @@
 {
-  "name": "sboerrigter/wordpress-starter",
+  "name": "sboerrigter/start",
   "type": "project",
   "license": "MIT",
   "description": "WordPress starter project for custom theme development.",
-  "homepage": "https://github.com/sboerrigter/wordpress-starter",
+  "homepage": "https://github.com/sboerrigter/start",
   "authors": [
     {
       "name": "Sjoerd Boerrigter",
