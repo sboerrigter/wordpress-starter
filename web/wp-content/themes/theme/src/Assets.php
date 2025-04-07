@@ -12,7 +12,8 @@ class Assets
     add_action('wp_head', [static::class, 'preconnect']);
     add_action('wp_enqueue_scripts', [static::class, 'enqueue'], 10);
     add_filter('script_loader_tag', [static::class, 'scriptLoader'], 10, 3);
-    add_action('after_setup_theme', [static::class, 'addEditorStyles']);
+    add_action('after_setup_theme', [static::class, 'editorStyles']);
+    add_action('enqueue_block_editor_assets', [static::class, 'editorScripts']);
   }
 
   // Preconnect to Google fonts
@@ -61,12 +62,22 @@ class Assets
   }
 
   // Enqueue block editor styles
-  public static function addEditorStyles()
+  public static function editorStyles()
   {
     add_theme_support('editor-styles');
 
     add_editor_style(static::$fontUrl);
     add_editor_style(static::compiled('css'));
+  }
+
+  // Enqueue block editor customization script
+  public static function editorScripts()
+  {
+    wp_enqueue_script(
+      'theme-editor',
+      get_theme_file_uri('/scripts/editor.js'),
+      ['wp-blocks', 'wp-dom-ready', 'wp-edit-post']
+    );
   }
 
   // Get URL of compiled CSS or JS

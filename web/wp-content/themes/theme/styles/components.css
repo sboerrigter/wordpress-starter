@@ -65,7 +65,6 @@
 
 /* Block: image */
 .wp-block-image {
-  @apply my-9;
 }
 
 /* Block: separator */
