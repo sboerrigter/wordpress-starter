@@ -71,3 +71,16 @@
 .wp-block-separator {
   @apply my-9;
 }
+
+/* Block: table */
+.wp-block-table {
+  @apply my-9;
+
+  thead {
+    @apply border-b-2;
+  }
+
+  &.is-style-stripes tbody tr:nth-child(odd) {
+    @apply bg-gray-100;
+  }
+}

@@ -4,7 +4,14 @@
   "settings": {
     "appearanceTools": false,
     "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
       "defaultPalette": false,
+      "duotone": [],
+      "gradients": [],
       "palette": [
         {
           "slug": "white",

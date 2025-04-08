@@ -78,3 +78,7 @@ hr {
 iframe {
   @apply w-full aspect-video;
 }
+
+th {
+  @apply text-left;
+}
