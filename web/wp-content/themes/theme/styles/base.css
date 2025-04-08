@@ -79,6 +79,11 @@ iframe {
   @apply w-full aspect-video;
 }
 
-th {
+table {
   @apply text-left;
+}
+
+th,
+td {
+  @apply align-top;
 }
