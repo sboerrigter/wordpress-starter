@@ -73,11 +73,11 @@ class Assets
   // Enqueue block editor customization script
   public static function editorScripts()
   {
-    wp_enqueue_script(
-      'theme-editor',
-      get_theme_file_uri('/scripts/editor.js'),
-      ['wp-blocks', 'wp-dom-ready', 'wp-edit-post']
-    );
+    wp_enqueue_script('theme-editor', get_theme_file_uri('scripts/editor.js'), [
+      'wp-blocks',
+      'wp-dom-ready',
+      'wp-edit-post',
+    ]);
   }
 
   // Get URL of compiled CSS or JS

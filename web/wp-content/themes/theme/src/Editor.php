@@ -10,7 +10,7 @@ class Editor
     'core/list-item',
     'core/list',
     'core/paragraph',
-    // 'core/quote',
+    'core/quote',
     'core/table',
     //
     // // Media

@@ -63,6 +63,18 @@ a {
   @apply transition-colors;
 }
 
+blockquote {
+  @apply my-9 pl-6 border-l-3 border-primary-600;
+
+  :not(cite) {
+    @apply text-2xl/normal text-primary-600 font-semibold mb-4;
+  }
+}
+
+cite {
+  @apply font-bold not-italic;
+}
+
 strong {
   @apply font-semibold text-gray-800;
 }
