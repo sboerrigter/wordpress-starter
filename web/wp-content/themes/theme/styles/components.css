@@ -5,7 +5,7 @@
 
 /* Menu */
 .menu-open {
-  @apply !opacity-100 !translate-y-0 !flex !pointer-events-auto;
+  @apply !pointer-events-auto !flex !translate-y-0 !opacity-100;
 }
 
 .menu-toggle-open {
