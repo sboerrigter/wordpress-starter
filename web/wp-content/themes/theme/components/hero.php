@@ -11,6 +11,6 @@
       'widths' => [335, 480, 600, 1200],
     ]) ?>
   <?php } else { ?>
-    <hr class="my-0" />
+    <hr />
   <?php } ?>
 </header>

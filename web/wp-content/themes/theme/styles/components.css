@@ -69,5 +69,5 @@
 
 /* Block: separator */
 .wp-block-separator {
-  @apply my-9 border-t-0 h-px bg-gray-200;
+  @apply my-9;
 }

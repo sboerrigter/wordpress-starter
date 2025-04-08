@@ -71,6 +71,10 @@ strong {
   @apply bg-primary-600 text-white;
 }
 
+hr {
+  @apply border-none h-px bg-gray-200;
+}
+
 iframe {
   @apply w-full aspect-video;
 }

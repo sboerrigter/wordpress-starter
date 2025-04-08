@@ -21,7 +21,7 @@
       </div>
     </div>
   <?php } else { ?>
-    <hr class="my-0" />
+    <hr />
   <?php } ?>
 </footer>
 
