@@ -51,6 +51,7 @@ final class Admin
       'themes.php', // Appaerance
       'plugins.php', // Plugins
       'users.php', // Users
+      'profile.php', // Profile
       'tools.php', // Tools
       'options-general.php', // Settings
 
