@@ -7,8 +7,8 @@ class Editor
   static $allowedBlockTypes = [
     // // Text
     'core/heading',
-    // 'core/list-item',
-    // 'core/list',
+    'core/list-item',
+    'core/list',
     'core/paragraph',
     // 'core/quote',
     'core/table',

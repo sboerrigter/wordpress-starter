@@ -40,7 +40,7 @@ p {
 
 ol,
 ul {
-  @apply list-disc text-gray-600 ml-5 mb-6;
+  @apply list-decimal text-gray-600 ml-6 mb-6;
   @apply marker:text-primary-600 marker:font-semibold;
 
   ol,
@@ -49,12 +49,12 @@ ul {
   }
 }
 
-ol {
-  @apply list-decimal;
+ul {
+  @apply list-disc;
 }
 
 li {
-  @apply my-1;
+  @apply my-2;
 }
 
 a {
