@@ -56,11 +56,11 @@
 }
 
 .wp-block-button {
-  a {
+  .wp-block-button__link {
     @apply button;
   }
 
-  &.is-style-outline a {
+  &.is-style-outline .wp-block-button__link {
     @apply button-outline;
   }
 }
