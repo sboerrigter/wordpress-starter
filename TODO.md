@@ -17,7 +17,7 @@ A list of things I want to get done before building my first website with this p
 - [x] Add support for `core/columns` block
 - [x] Add support for `core/separator` block
 - [x] Add support for `core/spacer` block
-- [ ] Add support for `core/embed` block
+- [x] Add support for `core/embed` block
 
 ## Pages and components
 
