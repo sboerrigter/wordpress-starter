@@ -90,8 +90,20 @@ hr {
   @apply border-t;
 }
 
+img {
+  @apply max-w-full;
+}
+
+figcaption {
+  @apply text-sm text-gray-400;
+}
+
+video {
+  @apply rounded;
+}
+
 iframe {
-  @apply aspect-video w-full;
+  @apply w-full;
 }
 
 table {

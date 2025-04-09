@@ -40,7 +40,12 @@
   }
 }
 
-/* Columns block */
+/* Block: Audio */
+.wp-block-audio {
+  @apply my-9;
+}
+
+/* Block: Columns */
 .wp-block-columns {
   @apply my-6 gap-6 min-[782px]:my-9 min-[782px]:gap-9;
 }
@@ -49,7 +54,7 @@
   @apply last:mb-0;
 }
 
-/* Block: buttons */
+/* Block: Buttons */
 .wp-block-buttons {
   @apply gap-3;
   @apply my-9;
@@ -65,11 +70,11 @@
   }
 }
 
-/* Block: image */
+/* Block: Image */
 .wp-block-image {
 }
 
-/* Block: separator */
+/* Block: Separator */
 .wp-block-separator {
   @apply mx-auto my-9 h-px w-1/4 border-none bg-gray-200;
 
@@ -78,7 +83,7 @@
   }
 }
 
-/* Block: table */
+/* Block: Table */
 .wp-block-table {
   @apply my-9;
 
@@ -89,4 +94,9 @@
   &.is-style-stripes tbody tr:nth-child(odd) {
     @apply bg-gray-100;
   }
+}
+
+/* Block: Video */
+.wp-block-video {
+  @apply my-9;
 }
