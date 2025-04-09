@@ -13,7 +13,7 @@ A list of things I want to get done before building my first website with this p
 - [ ] Add support for `core/gallery` block
 - [ ] Add support for `core/image` block
 - [ ] Add support for `core/video` block
-- [ ] Add support for `core/buttons` block
+- [x] Add support for `core/buttons` block
 - [ ] Add support for `core/columns` block
 - [ ] Add support for `core/separator` block
 - [ ] Add support for `core/spacer` block
