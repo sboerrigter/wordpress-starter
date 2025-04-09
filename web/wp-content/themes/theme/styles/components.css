@@ -55,12 +55,14 @@
   @apply my-9;
 }
 
-.wp-block-button__link {
-  @apply button;
-}
+.wp-block-button {
+  a {
+    @apply button;
+  }
 
-.wp-block-button.is-style-outline .wp-block-button__link {
-  @apply button-outline;
+  &.is-style-outline a {
+    @apply button-outline;
+  }
 }
 
 /* Block: image */

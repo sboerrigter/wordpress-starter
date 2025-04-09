@@ -92,6 +92,9 @@
     },
     "blocks": {
       "core/button": {
+        "color": {
+          "palette": []
+        },
         "border": {
           "radius": false
         }
@@ -120,6 +123,39 @@
               "size": "1.25rem"
             }
           ]
+        }
+      }
+    }
+  },
+  "styles": {
+    "elements": {
+      "button": {
+        "border": {
+          "radius": "inherit"
+        },
+        "spacing": {
+          "padding": {
+            "top": "inherit",
+            "right": "inherit",
+            "bottom": "inherit",
+            "left": "inherit"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "variations": {
+          "outline": {
+            "spacing": {
+              "padding": {
+                "top": "inherit",
+                "right": "inherit",
+                "bottom": "inherit",
+                "left": "inherit"
+              }
+            }
+          }
         }
       }
     }
