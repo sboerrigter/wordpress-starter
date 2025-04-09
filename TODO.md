@@ -31,11 +31,18 @@ A list of things I want to get done before building my first website with this p
 - [ ] Share buttons
 - [ ] Related posts
 
+# Menu bugs
+
+- [ ] Submenu stays visible on desktop after opning on mobile
+- [ ] Open current menu item or parent in mobile submenu
+- [ ] Test a very long menu
+- [ ] Make menu sticky when open on mobile
+
 ## Devops
 
 - [ ] Install and configure Deployer
 - [ ] Configure automatic deployment via Github actions
-- [ ] Choose a hosting provider (with SSL support)
+- [ ] Choose a hosting provider (with SSL support and automatic backups)
 - [ ] Maybe use a server management tool like Forge, Runcloud, Servepilot or Ploi?
 - [ ] Deploy to a production environent
 - [ ] Choose a caching solutions like Varnish or Cloudflare
@@ -48,13 +55,6 @@ A list of things I want to get done before building my first website with this p
 - [ ] Do a lighthouse test and fix issues
 - [ ] Add WP Mail SMTP config to application.php
 - [ ] Add Tailwind/CSS import globbing (https://github.com/vitejs/vite/issues/12336, https://github.com/vitejs/vite/discussions/6688#discussioncomhment-3649999, https://github.com/dimitrinicolas/postcss-import-ext-glob)
-
-# Menu
-
-- [ ] Submenu stays visible on desktop after opning on mobile
-- [ ] Open current menu item or parent in mobile submenu
-- [ ] Test a very long menu
-- [ ] Make menu sticky when open on mobile
 
 # Low priority
 
