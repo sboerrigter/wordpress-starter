@@ -71,7 +71,11 @@
 
 /* Block: separator */
 .wp-block-separator {
-  @apply my-9;
+  @apply mx-auto my-9 h-px w-1/4 border-none bg-gray-200;
+
+  &.is-style-wide {
+    @apply w-full;
+  }
 }
 
 /* Block: table */

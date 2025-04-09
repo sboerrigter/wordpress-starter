@@ -1,17 +1,20 @@
 body {
   @apply bg-white text-gray-800;
-  @apply font-[Inter] antialiased leading-normal;
-  @apply accent-primary-600 border-gray-200;
+  @apply font-[Inter] leading-normal antialiased;
+  @apply accent-primary-600;
 }
 
+* {
+  @apply border-gray-200;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply font-extrabold leading-normal;
-  @apply text-lg/normal mb-2;
+  @apply leading-normal font-extrabold;
+  @apply mb-2 text-lg/normal;
 
   strong {
     @apply font-extrabold;
@@ -19,28 +22,28 @@ h6 {
 }
 
 h1 {
-  @apply text-3xl/snug mb-4;
+  @apply mb-4 text-3xl/snug;
   @apply xs:text-4xl/tight xs:mb-8;
-  @apply md:text-5xl/tight md:mb-10;
+  @apply md:mb-10 md:text-5xl/tight;
 }
 
 h2 {
-  @apply text-2xl/normal mb-3;
-  @apply md:text-3xl/snug md:mb-4;
+  @apply mb-3 text-2xl/normal;
+  @apply md:mb-4 md:text-3xl/snug;
 }
 
 h3 {
-  @apply text-xl mb-2;
-  @apply md:text-2xl/normal md:mb-3;
+  @apply mb-2 text-xl;
+  @apply md:mb-3 md:text-2xl/normal;
 }
 
 p {
-  @apply text-base/normal mb-6 text-gray-600;
+  @apply mb-6 text-base/normal text-gray-600;
 }
 
 ol,
 ul {
-  @apply list-decimal text-gray-600 ml-6 mb-6;
+  @apply mb-6 ml-6 list-decimal text-gray-600;
   @apply marker:text-primary-600 marker:font-semibold;
 
   ol,
@@ -59,15 +62,15 @@ li {
 
 a {
   @apply text-primary-600 hover:text-primary-800;
-  @apply underline underline-offset-2 font-semibold;
+  @apply font-semibold underline underline-offset-2;
   @apply transition-colors;
 }
 
 blockquote {
-  @apply my-9 pl-6 border-l-3 border-primary-600;
+  @apply border-primary-600 my-9 border-l-3 pl-6;
 
   :not(cite) {
-    @apply text-2xl/normal text-primary-600 font-semibold mb-4;
+    @apply text-primary-600 mb-4 text-2xl/normal font-semibold;
   }
 }
 
@@ -84,11 +87,11 @@ strong {
 }
 
 hr {
-  @apply border-none h-px bg-gray-200;
+  @apply border-t;
 }
 
 iframe {
-  @apply w-full aspect-video;
+  @apply aspect-video w-full;
 }
 
 table {
