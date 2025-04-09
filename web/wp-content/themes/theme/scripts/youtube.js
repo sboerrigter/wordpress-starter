@@ -15,6 +15,7 @@ elements.forEach((element) => {
       'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
     );
     video.setAttribute('allowfullscreen', '');
+    video.setAttribute('class', 'w-full h-full');
     video.setAttribute('frameborder', '0');
     video.setAttribute('loading', 'lazy');
     video.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');

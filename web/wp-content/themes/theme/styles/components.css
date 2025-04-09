@@ -70,6 +70,11 @@
   }
 }
 
+/* Block: Embed */
+.wp-block-embed {
+  @apply my-9;
+}
+
 /* Block: Gallery */
 .wp-block-gallery {
   @apply my-9;
