@@ -21,7 +21,7 @@ class Media
   public static function imageSizes()
   {
     update_option('thumbnail_size_w', 180);
-    update_option('thumbnail_size_h', 180);
+    update_option('thumbnail_size_h', '');
     update_option('medium_size_w', 360);
     update_option('medium_size_h', '');
     update_option('large_size_w', 720);

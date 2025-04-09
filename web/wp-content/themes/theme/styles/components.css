@@ -72,6 +72,11 @@
 
 /* Block: Image */
 .wp-block-image {
+  @apply my-9;
+}
+
+.wp-element-caption {
+  @apply mb-0;
 }
 
 /* Block: Separator */
