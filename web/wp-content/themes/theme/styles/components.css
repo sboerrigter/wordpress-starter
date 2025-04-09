@@ -70,9 +70,18 @@
   }
 }
 
+/* Block: Gallery */
+.wp-block-gallery {
+  @apply my-9;
+}
+
 /* Block: Image */
 .wp-block-image {
   @apply my-9;
+
+  img {
+    @apply rounded;
+  }
 }
 
 .wp-element-caption {
@@ -104,4 +113,8 @@
 /* Block: Video */
 .wp-block-video {
   @apply my-9;
+
+  video {
+    @apply rounded;
+  }
 }

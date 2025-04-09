@@ -10,8 +10,8 @@ A list of things I want to get done before building my first website with this p
 - [x] Add support for `core/quote` block
 - [x] Add support for `core/table` block
 - [x] Add support for `core/audio` block
-- [ ] Add support for `core/gallery` block
-- [ ] Add support for `core/image` block
+- [x] Add support for `core/gallery` block
+- [x] Add support for `core/image` block
 - [x] Add support for `core/video` block
 - [x] Add support for `core/buttons` block
 - [x] Add support for `core/columns` block
