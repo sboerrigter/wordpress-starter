@@ -14,7 +14,7 @@ A list of things I want to get done before building my first website with this p
 - [ ] Add support for `core/image` block
 - [ ] Add support for `core/video` block
 - [x] Add support for `core/buttons` block
-- [ ] Add support for `core/columns` block
+- [x] Add support for `core/columns` block
 - [ ] Add support for `core/separator` block
 - [ ] Add support for `core/spacer` block
 - [ ] Add support for `core/embed` block

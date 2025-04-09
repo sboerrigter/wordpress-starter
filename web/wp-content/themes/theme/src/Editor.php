@@ -5,29 +5,29 @@ namespace Theme;
 class Editor
 {
   static $allowedBlockTypes = [
-    // // Text
+    // Text
     'core/heading',
     'core/list-item',
     'core/list',
     'core/paragraph',
     'core/quote',
     'core/table',
-    //
-    // // Media
-    // 'core/audio',
-    // 'core/gallery',
-    // 'core/image',
-    // 'core/video',
-    //
-    // // Layout
+
+    // Media
+    'core/audio',
+    'core/gallery',
+    'core/image',
+    'core/video',
+
+    // Layout
     'core/button',
     'core/buttons',
-    // 'core/columns',
-    // 'core/separator',
-    // 'core/spacer',
-    //
-    // // Embeds
-    // 'core/embed',
+    'core/columns',
+    'core/separator',
+    'core/spacer',
+
+    // Embeds
+    'core/embed',
   ];
 
   public static function init()

@@ -42,7 +42,7 @@
 
 /* Columns block */
 .wp-block-columns {
-  @apply my-9 gap-9;
+  @apply my-6 gap-6 min-[782px]:my-9 min-[782px]:gap-9;
 }
 
 .wp-block-column > * {
