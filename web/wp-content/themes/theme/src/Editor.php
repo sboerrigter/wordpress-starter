@@ -20,8 +20,8 @@ class Editor
     // 'core/video',
     //
     // // Layout
-    // 'core/button',
-    // 'core/buttons',
+    'core/button',
+    'core/buttons',
     // 'core/columns',
     // 'core/separator',
     // 'core/spacer',

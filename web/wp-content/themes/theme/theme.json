@@ -75,6 +75,9 @@
         }
       ]
     },
+    "shadow": {
+      "defaultPresets": false
+    },
     "typography": {
       "customFontSize": false,
       "dropCap": false,
@@ -88,6 +91,11 @@
       "writingMode": false
     },
     "blocks": {
+      "core/button": {
+        "border": {
+          "radius": false
+        }
+      },
       "core/paragraph": {
         "typography": {
           "fontSizes": [
