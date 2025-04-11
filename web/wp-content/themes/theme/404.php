@@ -1,6 +1,6 @@
 <?php
 $text = __(
-  'Unfortunately, this page doesn\'t exists. You can go to the homepage, or use the menu above to find the page you are looking for.',
+  'Unfortunately, this page does not exist. You can go to the homepage, or use the menu above to navigate to other pages.',
   'theme'
 );
 $button = component('button', [

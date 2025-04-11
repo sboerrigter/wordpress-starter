@@ -21,7 +21,7 @@ A list of things I want to get done before building my first website with this p
 
 ## Pages and components
 
-- [ ] 404 error page
+- [x] 404 error page
 - [ ] Posts overview
 - [ ] Post detail page
 - [ ] Post meta

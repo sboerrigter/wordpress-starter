@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Custom theme\n"
-"POT-Creation-Date: 2025-04-11 14:54+0200\n"
-"PO-Revision-Date: 2025-04-11 14:54+0200\n"
+"POT-Creation-Date: 2025-04-11 15:16+0200\n"
+"PO-Revision-Date: 2025-04-11 15:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: 404.php:3
 msgid ""
-"Unfortunately, this page doesn't exists. You can go to the homepage, or use "
-"the menu above to find the page you are looking for."
+"Unfortunately, this page does not exist. You can go to the homepage, or use "
+"the menu above to navigate to other pages."
 msgstr ""
-"De pagina die je zoekt bestaat helaas niet. Je kunt naar de homepage gaan, "
-"of het menu hierboven gebruiken om de pagina te vinden die je zoekt."
+"Deze pagina bestaat helaas niet. Je kan naar de homepagina gaan, of het "
+"menu hierboven gebruiken om naar andere pagina's te navigeren."
 
 #: 404.php:7
 msgid "To the homepage"
