@@ -25,7 +25,7 @@ class Security
   {
     if (!is_user_logged_in()) {
       return new WP_Error('access_denied', 'Rest API is disabled', [
-        'status' => 403,
+        'status' => rest_authorization_required_code(),
       ]);
     }
 

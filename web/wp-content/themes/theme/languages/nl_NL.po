@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Custom theme\n"
-"POT-Creation-Date: 2025-04-07 15:10+0200\n"
-"PO-Revision-Date: 2025-04-07 15:11+0200\n"
+"POT-Creation-Date: 2025-04-11 14:54+0200\n"
+"PO-Revision-Date: 2025-04-11 14:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -18,6 +18,22 @@ msgstr ""
 "__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:3
+msgid ""
+"Unfortunately, this page doesn't exists. You can go to the homepage, or use "
+"the menu above to find the page you are looking for."
+msgstr ""
+"De pagina die je zoekt bestaat helaas niet. Je kunt naar de homepage gaan, "
+"of het menu hierboven gebruiken om de pagina te vinden die je zoekt."
+
+#: 404.php:7
+msgid "To the homepage"
+msgstr "Naar de homepagina"
+
+#: 404.php:17
+msgid "Page not found"
+msgstr "Pagina niet gevonden"
 
 #: src/Menu.php:14
 msgid "Main menu"
