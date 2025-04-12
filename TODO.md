@@ -38,13 +38,13 @@ A list of things I want to get done before building my first website with this p
 
 ## Devops
 
-- [ ] Install and configure Deployer
+- [x] Install and configure Deployer
 - [ ] Configure automatic deployment via Github actions
-- [ ] Choose a hosting provider (with SSL support and automatic backups)
-- [ ] Maybe use a server management tool like Forge, Runcloud, Servepilot or Ploi?
-- [ ] Deploy to a production environent
-- [ ] Choose a caching solutions like Varnish or Cloudflare
-- [ ] Add a cache purge plugin
+- [x] Choose a hosting provider (with SSL support and automatic backups)
+- [x] Maybe use a server management tool like ~~Forge, Runcloud, Servepilot or Ploi?~~ Cloudpanel
+- [x] Deploy to a production environent
+- [x] Choose a caching solutions like Varnish or Cloudflare
+- [x] Add a cache purge plugin
 
 ## Other stuff
 
