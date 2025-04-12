@@ -61,9 +61,7 @@ li {
 }
 
 a {
-  @apply text-primary-600 hover:text-primary-800;
-  @apply font-semibold underline underline-offset-2;
-  @apply transition-colors;
+  @apply text-primary-600 hover:text-primary-800 cursor-pointer font-semibold underline underline-offset-2 transition-colors;
 }
 
 blockquote {
