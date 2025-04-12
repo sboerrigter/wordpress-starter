@@ -83,25 +83,26 @@ task('db:push', function () {
 // Pull uploads: dep uploads:pull
 task('uploads:pull', function () {
   runLocally(
-    'rsync -avz -e "ssh -p {{port}}" {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/app/uploads ./app'
+    'rsync -avz -e "ssh" {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/wp-content/uploads ./app'
   );
 });
 
 // Push uploads: dep uploads:push
 task('uploads:push', function () {
   runLocally(
-    'rsync -avz -e "ssh -p {{port}}" ./app/uploads {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/app'
+    'rsync -avz -e "ssh" ./web/wp-content/uploads {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/app'
   );
 });
 
 // Purge Varnish
-task('purge:varnish', function () {
-  run(
-    'curl -sX BAN -H "X-Ban-Method: exact" -H "X-Ban-Host: {{domain}}" http://localhost/ > /dev/null'
-  );
-});
+// @todo fix this
+// task('purge:varnish', function () {
+//   run(
+//     'curl -sX BAN -H "X-Ban-Method: exact" -H "X-Ban-Host: {{domain}}" http://localhost/ > /dev/null'
+//   );
+// });
 
 // Hooks
 after('deploy:prepare', 'deploy:build');
-after('deploy', 'purge:varnish');
+// after('deploy', 'purge:varnish');
 after('deploy:failed', 'deploy:unlock');
