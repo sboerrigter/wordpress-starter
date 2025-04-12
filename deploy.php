@@ -83,14 +83,14 @@ task('db:push', function () {
 // Pull uploads: dep uploads:pull
 task('uploads:pull', function () {
   runLocally(
-    'rsync -avz -e "ssh" {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/wp-content/uploads ./app'
+    'rsync -avz -e "ssh" {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/web/wp-content/uploads ./web/wp-content'
   );
 });
 
 // Push uploads: dep uploads:push
 task('uploads:push', function () {
   runLocally(
-    'rsync -avz -e "ssh" ./web/wp-content/uploads {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/app'
+    'rsync -avz -e "ssh" ./web/wp-content/uploads {{remote_user}}@{{hostname}}:{{deploy_path}}/shared/web/wp-content'
   );
 });
 
