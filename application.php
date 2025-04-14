@@ -75,7 +75,7 @@ Config::define('WPMS_MAIL_FROM', env('WPMS_MAIL_FROM'));
 Config::define('WPMS_MAIL_FROM_NAME', env('WPMS_MAIL_FROM_NAME'));
 Config::define('WPMS_MAILER', env('WPMS_MAILER') ?? 'sendgrid');
 Config::define('WPMS_SENDGRID_API_KEY', env('WPMS_SENDGRID_API_KEY'));
-Config::define('WPMS_SENDGRID_DOMAIN', env('WPMS_SENDGRID_API_KEY'));
+Config::define('WPMS_SENDGRID_DOMAIN', env('WPMS_SENDGRID_DOMAIN'));
 
 // Authentication
 Config::define('AUTH_KEY', env('AUTH_KEY'));
