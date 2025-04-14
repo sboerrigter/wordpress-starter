@@ -32,7 +32,7 @@ host('start.bonsjoerd.eu')
   ->set('deploy_path', '/home/start/htdocs');
 
 host('hannahservices.com')
-  ->set('branch', 'main')
+  ->set('branch', 'hannah')
   ->set('hostname', 'server01.bonsjoerd.eu')
   ->set('remote_user', 'hannah')
   ->set('remote_url', 'https://www.hannahservices.com')
