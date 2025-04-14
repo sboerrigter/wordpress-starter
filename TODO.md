@@ -51,7 +51,7 @@ A list of things I want to get done before building my first website with this p
 - [ ] Maybe add a post type classes?
 - [ ] Maybe add a taxonomy classes?
 - [ ] Do a lighthouse test and fix issues
-- [ ] Add WP Mail SMTP config to application.php
+- [x] Add WP Mail SMTP config to application.php
 - [ ] Add Tailwind/CSS import globbing (https://github.com/vitejs/vite/issues/12336, https://github.com/vitejs/vite/discussions/6688#discussioncomhment-3649999, https://github.com/dimitrinicolas/postcss-import-ext-glob)
 
 # Low priority
