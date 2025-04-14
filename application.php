@@ -69,6 +69,14 @@ ini_set('display_errors', '0');
 // Theme
 Config::define('PRODUCTION_URL', env('PRODUCTION_URL'));
 
+// WP Mail SMTP
+Config::define('WPMS_ON', env('WPMS_ON') ?? false);
+Config::define('WPMS_MAIL_FROM', env('WPMS_MAIL_FROM'));
+Config::define('WPMS_MAIL_FROM_NAME', env('WPMS_MAIL_FROM_NAME'));
+Config::define('WPMS_MAILER', env('WPMS_MAILER') ?? 'sendgrid');
+Config::define('WPMS_SENDGRID_API_KEY', env('WPMS_SENDGRID_API_KEY'));
+Config::define('WPMS_SENDGRID_DOMAIN', env('WPMS_SENDGRID_API_KEY'));
+
 // Authentication
 Config::define('AUTH_KEY', env('AUTH_KEY'));
 Config::define('SECURE_AUTH_KEY', env('SECURE_AUTH_KEY'));

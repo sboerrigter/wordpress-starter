@@ -13,7 +13,7 @@ set('default_timeout', 3600);
 
 // Defaults
 set('branch', 'main');
-set('local_url', 'https://www.start.test');
+set('local_url', 'http://www.start.test');
 
 set('identityFile', '~/.ssh/id_rsa');
 set('addSshOption', 'UserKnownHostsFile', '/dev/null');
