@@ -11,9 +11,6 @@
   --breakpoint-2xs: 375px;
   --breakpoint-xs: 480px;
 
-  --container-content: 760px;
-  --container-site: 1240px;
-
   --color-primary-50: var(--color-rose-50);
   --color-primary-100: var(--color-rose-100);
   --color-primary-200: var(--color-rose-200);
@@ -25,4 +22,9 @@
   --color-primary-800: var(--color-rose-800);
   --color-primary-900: var(--color-rose-900);
   --color-primary-950: var(--color-rose-950);
+
+  --container-content: 760px;
+  --container-site: 1240px;
+
+  --font-heading: 'Crimson Pro', 'serif';
 }

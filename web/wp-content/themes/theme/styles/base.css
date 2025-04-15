@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-[Crimson_Pro] leading-normal font-extrabold;
+  @apply font-heading leading-normal font-extrabold;
   @apply mb-2 text-lg/normal;
 
   strong {
@@ -53,11 +53,11 @@ ul {
 }
 
 ul {
-  @apply list-disc;
+  @apply list-image-[url(../images/logo.svg)];
 }
 
 li {
-  @apply my-2;
+  @apply my-2 pl-2;
 }
 
 a {
